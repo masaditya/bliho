@@ -1,0 +1,81 @@
+/* navbar register */
+body {
+  font-family:tahoma;
+  font-size:12px;
+}
+
+#signup-step {
+  margin-top: 30px;
+  margin-left: 25%;
+  padding:0;
+  width:53%
+}
+
+#signup-step li {
+  list-style:none;
+  float:left;
+  padding:5px 10px;
+  border-top:#ef682f 1px solid;
+  border-left:#ef682f 1px solid;
+  border-right:#ef682f 1px solid;
+  border-radius:5px 5px 0 0;
+}
+
+.active {
+  color:#FFF;
+}
+
+#signup-step li.active {
+  background-color:#ef682f;
+}
+
+#signup-form {
+  clear:both;
+  border:1px #004C9C solid;
+  padding:20px;
+  width:50%;
+  margin:auto;
+}
+
+.demoInputBox {
+  padding: 10px;
+  border: #CDCDCD 1px solid;
+  border-radius: 4px;
+  background-color: #FFF;
+  width: 50%;
+}
+
+.signup-error {
+  color:#FF0000;
+  padding-left:15px;
+}
+
+label {
+  line-height:35px;
+}
+/* end navbar register */
+
+.header-register{
+  background-color: #ef682f;
+  position: relative;
+  padding: 10px 0;
+  color: #fff;
+}
+.header-register h3{
+  text-align: center;
+}
+
+/* captcha */
+#captcha{
+  font-family: monospace;
+  /* background-image: url('../images/captcha.png'); */
+  background-size: contain;
+  height: 10px;
+  font-size: 25px;
+  font-style: italic;
+  padding: 5px 30px;
+  color: #66ef83;
+}
+.captcha{
+  margin-top: 690px;
+}
