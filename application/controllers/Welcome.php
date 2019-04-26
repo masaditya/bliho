@@ -26,8 +26,22 @@ class Welcome extends CI_Controller {
     }
 	public function index()
 	{
-		$this->load->view('frontend/b2c/main/header.php');
-		$this->load->view('frontend/b2c/content/home.php');
-		$this->load->view('frontend/b2c/main/footer.php');
+		$this->load->view('frontend/b2c/main/header');
+		$this->load->view('frontend/b2c/content/home');
+		$this->load->view('frontend/b2c/main/footer');
+	}
+	public function payment(){
+		$this->load->view('frontend/b2c/main/header');
+		$this->load->view('payment');
+	}
+	public function signin(){
+		$this->load->view('frontend/b2c/main/header');
+		$this->load->view('frontend/b2c/content/content-signin');
+		$this->load->view('frontend/b2c/main/footer');
+	}
+	public function signup(){
+		$this->load->view('frontend/b2c/main/header');
+		$this->load->view('frontend/b2c/content/content-signup');
+		$this->load->view('frontend/b2c/main/footer');
 	}
 }

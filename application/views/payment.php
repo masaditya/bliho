@@ -1,4 +1,3 @@
-<?php include 'frontend/b2c/main/header.php'; ?>
 <body>
 <div class="video">
     <div class="row payment-container">
