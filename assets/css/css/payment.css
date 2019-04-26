@@ -1,0 +1,232 @@
+@font-face {
+    font-family: "Maax Rounded";
+    src: url("//db.onlinewebfonts.com/t/10875ab5a017f30340245f91c470c330.eot");
+    src: url("//db.onlinewebfonts.com/t/10875ab5a017f30340245f91c470c330.eot?#iefix") format("embedded-opentype"),
+        url("//db.onlinewebfonts.com/t/10875ab5a017f30340245f91c470c330.woff2") format("woff2"),
+        url("//db.onlinewebfonts.com/t/10875ab5a017f30340245f91c470c330.woff") format("woff"),
+        url("//db.onlinewebfonts.com/t/10875ab5a017f30340245f91c470c330.ttf") format("truetype"),
+        url("//db.onlinewebfonts.com/t/10875ab5a017f30340245f91c470c330.svg#Maax Rounded") format("svg");
+}
+
+nav {
+    box-shadow: none;
+}
+
+.payment-container-left {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    width: 50%;
+    height: 100%;
+    -webkit-box-shadow: 0px 8px 21px -15px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 8px 21px -15px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 8px 21px -15px rgba(0, 0, 0, 0.75);
+}
+
+.payment-container {
+    margin: 50px 5%;
+    margin-bottom: 0px;
+    padding-bottom: 100px;
+}
+
+.payment-stage {
+    padding: 0px 20px;
+    padding-top: 30px;
+}
+
+.flex-input {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.payment-stage label {
+    font-size: 12px;
+}
+
+.payment-stage input {
+    margin-bottom: 30px;
+    border-radius: 5px;
+    border: 1px solid #e0dfdf;
+    width: 100%;
+    -webkit-box-shadow: 0px 8px 21px -15px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 8px 21px -15px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 8px 21px -15px rgba(0, 0, 0, 0.75);
+}
+
+.confirm-card {
+    margin: 30px 0px;
+    background-color: #ffff;
+    width: 100%;
+    height: max-content;
+    padding: 30px 10px;
+    text-align: center;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 8px 21px -15px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 8px 21px -15px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 8px 21px -15px rgba(0, 0, 0, 0.75);
+}
+
+.confirm-card-selected {
+    border-top: 10px solid #f25456;
+}
+
+.confirm-card h5 {
+    color: #3d464d;
+    font-weight: 50;
+    font-size: 16px;
+    text-align: center;
+}
+
+.confirm-card p {
+    color: #3d464d;
+    font-weight: 50;
+    font-size: 13px;
+    text-align: center;
+}
+
+.flex-logo {
+    align-items: flex-end;
+    text-align: center;
+    justify-content: space-between;
+    display: flex;
+    float: left;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+}
+
+.flex-logo img {
+    margin: 0px 10px;
+}
+
+.radio-btn label {
+    padding: 0px 20px;
+    font-size: 13px;
+}
+
+.option-payment-radio {
+    /* justify-content: center; */
+    padding-left: 30px;
+}
+
+.wallet {
+    padding: 20px 10px;
+}
+
+input::placeholder {
+    /* color: red; */
+    margin-left: 20px;
+    font-size: 12px;
+}
+
+.image-container-right {
+    width: 50%;
+    padding: 0px 50px;
+}
+
+.image-container img {
+    padding: 0px 30px;
+    padding-top: 200px;
+    width: 500px;
+}
+
+.card-right-payment {
+    border-radius: 15px;
+    padding: 20px 0px;
+    background-color: #f8f9fa;
+    width: 388px;
+    height: 430px;
+    -webkit-box-shadow: 0px 8px 21px -15px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 8px 21px -15px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 8px 21px -15px rgba(0, 0, 0, 0.75);
+}
+
+.card-right-payment h3 {
+    font-weight: bold;
+    padding: 10px 30px;
+}
+
+.discount-code {
+    background-color: #ebebeb;
+    height: 110px;
+    width: 100%;
+    padding: 10px 10px;
+    padding: 25px 25px;
+}
+
+.discount-code h6 {
+    font-size: 13px;
+}
+
+.button-payment {
+    text-align: center;
+    border: none;
+    background-color: #f25456;
+    color: #ffff;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 6px 20px;
+    font-size: 15px;
+}
+
+.btn-down {
+    margin-top: 0px;
+    width: 100%;
+    margin-bottom: 30px;
+    padding: 7px 0px;
+}
+
+.btn-down-container {
+    padding-top: 0px;
+    padding-bottom: 40px;
+}
+
+.input-code {
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 0px;
+    padding-left: 20px;
+    -webkit-box-shadow: 0px 8px 21px -15px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 8px 21px -15px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 8px 21px -15px rgba(0, 0, 0, 0.75);
+}
+
+.ammount {
+    padding: 30px 10px;
+    padding-bottom: 0px;
+}
+
+.ammount p {
+    font-size: 13px;
+    padding: 10px 50px;
+    padding-bottom: 0px;
+}
+
+.cost p {
+    font-weight: bold;
+    text-align: right;
+    font-size: 13px;
+    padding: 10px 0px;
+    padding-bottom: 0px;
+}
+
+.total {
+    padding: 0px 0px;
+}
+
+.chckbox {
+    margin: 30px 0px;
+}
+
+.item-checkbox {
+    padding: 10px 30px;
+}
+
+.item-checkbox label {
+    font-size: 13px;
+    padding: 10px 30px;
+}
+
+.item-checkbox label strong {
+    color: #f25456;
+}
