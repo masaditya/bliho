@@ -17,7 +17,7 @@
 </head>
 
 <nav id="navbar" class="navbar navbar-default navbar-expand-lg navbar-light">
-    <a class="navbar-brand brand-text" href="<?= base_url() ?>"><img src="images/temp/logo.png" /></a>
+    <a class="navbar-brand brand-text" href="<?= base_url() ?>"><img style="width:104px;" src="<?=base_url()?>/assets/images/temp/logo.png" /></a>
     <div class="searchContainer">
         <i class="fa fa-search searchIcon"></i>
         <input class="searchBox" type="search" name="search" placeholder="Search" />
