@@ -1,0 +1,62 @@
+.forgot-pass-container {
+    margin: 100px auto;
+    background-color: #FFFF;
+    width: 30%;
+    height: 100%;
+    border-radius: 20px;
+    padding: 60px;
+    padding-top: 50px;
+}
+
+.forgot-pass-container h4 {
+    text-align: center;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 25px;
+    padding-bottom: 10px;
+}
+
+.background {
+    background-color: #F0F1F3;
+    width: 100%;
+    padding: 10px;
+}
+
+.forgot-pass-container p {
+    font-size: 12px;
+}
+
+.input-rounded {
+    padding: 0px 15px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    border: 1px solid #e0dfdf;
+    width: 100%;
+    -webkit-box-shadow: 0px 8px 21px -15px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 8px 21px -15px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 8px 21px -15px rgba(0, 0, 0, 0.75);
+
+}
+
+.forgot-pass-container label {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+input:focus {
+    border: 2px solid #18BBC8;
+
+}
+
+.forgot-pass-container button {
+    margin-top: 15px;
+    width: 100%;
+    text-align: center;
+    border: none;
+    background-color: #f25456;
+    color: #ffff;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 5px 20px;
+    font-size: 15px;
+}

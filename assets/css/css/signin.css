@@ -1,0 +1,63 @@
+.container-signin {
+    max-width: 4s00px;
+    padding: 100px;
+    padding-right: 0px;
+}
+
+
+.form-right {
+    padding-top: 50px;
+    /* padding-left: 50px; */
+    /* padding-right: 0; */
+
+}
+
+.form-right {
+    padding-left: 0px;
+}
+
+.input-row input {
+    width: 100%;
+}
+
+
+
+
+.form-right h4 {
+    font-weight: bold;
+}
+
+.form-right input {
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 2px solid #e0dfdf;
+    width: 100%;
+    -webkit-box-shadow: 0px 8px 21px -15px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 8px 21px -15px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 8px 21px -15px rgba(0, 0, 0, 0.75);
+}
+
+.form-right label {
+    font-weight: bold;
+    word-wrap: break-word;
+    margin-top: 20px;
+    font-size: 12px;
+}
+
+.form-right p {
+    letter-spacing: 1px;
+    margin-top: 30px;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+p strong {
+    font-weight: bold;
+    color: #F25456;
+}
+
+
+.btn-form {
+    margin-top: 50px;
+    text-align: center;
+}

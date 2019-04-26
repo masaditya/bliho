@@ -1,81 +1,64 @@
+
 <html>
 
 <head>
   <meta charset="UTF-8" />
   <title>Bliho.</title>
 
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-    crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-    crossorigin="anonymous" />
-  <link rel="stylesheet" href="<?=base_url()?>assets/css/style.css" />
-  <link rel="stylesheet" href="<?=base_url()?>assets/css/category.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
+  <link rel="stylesheet" href="<?=base_url()?>/assets/css/css/style.css" />
+  <link rel="stylesheet" href="<?=base_url()?>/assets/css/css/category.css" />
+  <script src="<?=base_url()?>/assets/js/loader.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
 <body>
   <div class="video">
-    <nav id="navbar" class="navbar navbar-default navbar-expand-lg navbar-light">
-      <a class="navbar-brand brand-text" href="#"><img src="<?=base_url()?>assets/images/logo.png" /></a>
-      <div class="searchContainer">
-        <i class="fa fa-search searchIcon"></i>
-        <input class="searchBox" type="search" name="search" placeholder="Search" />
-      </div>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto ">
-          <li class="nav-item nav-button">
-            <a class="nav-link nav-button-text" href="#">About</a>
-          </li>
-          <li class="nav-item nav-button">
-            <a class="nav-link nav-button-text" href="#">License</a>
-          </li>
-          <li class="nav-item nav-button">
-            <a class="nav-link nav-button-text" href="#">Pricing</a>
-          </li>
-          <li class="nav-item nav-button">
-            <a class="nav-link nav-button-text" href="#">Create Account</a>
-          </li>
-          <li class="nav-item nav-button">
-            <button class="btn sign-in sign-in-text my-2 my-sm-0" style="width:100px;">
-              Sign In
-              <i class="fas fa-sign-in-alt" style="margin-left:15%;"></i>
-            </button>
-          </li>
-        </ul>
-      </div>
-    </nav>
+    <?php include 'frontend/b2c/main/header.php'; ?>
     <div class="container-fluid content">
       <div class="row top-padding">
         <div class="col col-md-6 upper-left">
           <div class="row category ">
-            <div class="col-md-auto ">
-              <div class="category-icon ">
+            <div class="col-md-auto">
+              <div class="category-icon">
                 <div class="container">
-                  <img id="cat-1" key="1" class="category-icon-item selected" id="category-icon-1" src="<?=base_url()?>assets/images/icon1.jpg" />
-                  <img id="cat-2" key="3" class="category-icon-item" id="category-icon-3" src="<?=base_url()?>assets/images/icon3.jpg" />
-                  <img id="cat-3" key="2" class="category-icon-item" id="category-icon-2" src="<?=base_url()?>assets/images/icon2.jpg" />
-                  <img id="cat-4" key="4" class="category-icon-item" id="category-icon-4" src="<?=base_url()?>assets/images/icon4.jpg" />
-                  <img id="cat-5" key="5" class="category-icon-item" id="category-icon-5" src="<?=base_url()?>assets/images/icon5.jpg" />
+                  <img src="<?=base_url()?>/assets/images/selector.png" id="selector" />
+                  <img id="cat-1" key="1" class="category-icon-item" id="category-icon-1"
+                    src="<?=base_url()?>/assets/images/Group 10682@3x.png" />
+                  <img id="cat-2" key="3" class="category-icon-item" id="category-icon-3"
+                    src="<?=base_url()?>/assets/images/Group 10683@3x.png" />
+                  <img id="cat-3" key="2" class="category-icon-item" id="category-icon-2"
+                    src="<?=base_url()?>/assets/images/Group 10681@3x.png" />
+                  <img id="cat-4" key="4" class="category-icon-item" id="category-icon-4"
+                    src="<?=base_url()?>/assets/images/Group 10692@3x.png" />
+                  <img id="cat-5" key="5" class="category-icon-item" id="category-icon-5"
+                    src="<?=base_url()?>/assets/images/Group 10684@3x.png" />
                 </div>
               </div>
-
             </div>
-            <div class="col-md-6 " style="padding-top:25%;">
+            <div class="col-md-6 ">
               <ul class="category-list">
                 <li>
-                  <a key="1" class="category-list-item" href="#">Training Manual</a>
+                  <a key="1" value="Training Manual" class="category-list-item"
+                    href="pages/trainingManual/catalogTM.html">Training
+                    Manual</a>
                 </li>
                 <li>
-                  <a key="2" class="category-list-item" href="#">Musics</a>
+                  <a key="2" value="Music" class="category-list-item" href="/pages/music/catalogMusic.html">Music</a>
                 </li>
                 <li>
-                  <a key="3" class="category-list-item" href="#">Illustration</a>
+                  <a key="3" value="Illustrations" class="category-list-item" href="categories.html">Illustrations</a>
                 </li>
                 <li>
-                  <a key="4" class="category-list-item" href="#">Templates</a>
+                  <a key="4" value="Templates" class="category-list-item"
+                    href="pages/template/catalogTemplate.html">Templates</a>
                 </li>
                 <li>
-                  <a key="5" class="category-list-item" href="#">Stock Images</a>
+                  <a key="5" value="Stock Images" class="category-list-item"
+                    href="pages/stockImage/catalogStockImg.html">Stock Images</a>
                 </li>
               </ul>
               <form action="categories.html">
@@ -87,9 +70,11 @@
           </div>
         </div>
         <div class="col col-md-6 upper-right">
-          <img src="<?=base_url()?>assets/images/upper-right.png" />
-          <h2 class="upper-right-h2">Illustration</h2>
-          <p>
+          <div class="image-full">
+            <img id="fullsize" src="<?=base_url()?>/assets/images/Group 10988@3x.png" />
+          </div>
+          <h2 id="desc-title" class="upper-right-h2">Illustration</h2>
+          <p id="description">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
             enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -101,47 +86,37 @@
     </div>
   </div>
   <div style="height:100%;">
-    <div class="row">
-      <div class="col col-md-5 second-upper-left">
+    <div class="row second-container">
+      <div class="col-md-5 second-upper-left">
         <div class="second-upper-left-inside">
           <h2 class="upper-right-h2">999,999+ top</h2>
           <h2 class="upper-right-h2">quality assets</h2>
-          <p>
+          <p class="">
             All the creative assets you need <br />
             under one subscription.
           </p>
-          <button class="btn">Get Started</button>
+          <button class="get-started-btn">Get Started</button>
         </div>
       </div>
-      <div class="col col-md-1">
-        hello
-      </div>
-      <div class="col col-md-6">
-        <div class="second-upper-right">
-          <div id="first-img">
-            <img class="second-upper-right-img2" src="<?=base_url()?>assets/images/second-upper-right.png" />
-            <img class="second-upper-right-img1" src="<?=base_url()?>assets/images/second-upper-right.png" />
-          </div>
-          <div id="second-img">
-            <img class="second-upper-right-img0" src="<?=base_url()?>assets/images/second-upper-right.png" />
-          </div>
-          <div id="third-img">
-            <img class="second-upper-right-img2-bottom" src="<?=base_url()?>assets/images/second-upper-right.png" />
-            <img class="second-upper-right-img1-bottom" src="<?=base_url()?>assets/images/second-upper-right.png" />
-          </div>
+      <div class="col-md-1"></div>
 
-          <!-- <img class="second-upper-right-img0" src="images/second-upper-right.png"> -->
+      <div class="col-md-6 second-upper-right">
 
-          <!-- <img class="second-upper-right-img2-bottom" src="images/second-upper-right.png"> -->
-          <!-- <img class="second-upper-right-img1-bottom" src="images/second-upper-right.png"> -->
-        </div>
+        <img keys="1" id="icon-1" class="icon-images" src="<?=base_url()?>/assets/images/temp/1.png" />
+        <img keys="2" id="icon-2" class="icon-images" src="<?=base_url()?>/assets/images/temp/2.png" />
+        <img keys="3" id="icon-3" class="icon-images" src="<?=base_url()?>/assets/images/temp/3.png" />
+        <img keys="4" id="icon-4" class="icon-images" src="<?=base_url()?>/assets/images/temp/2.png" />
+        <img keys="5" id="icon-5" class="icon-images" src="<?=base_url()?>/assets/images/temp/3.png" />
       </div>
     </div>
   </div>
-  <div class="video" style="height:100%;">
-    <div class="third-upper">
-      <center>
-        <div class="third-upper-inside">
+  <div class="video" style="height:100%; background-image: linear-gradient(to top, #3d464d, #666666);">
+    <div class="row">
+      <div class="col-md-7 ">
+        <img class="third-left-row" src="<?=base_url()?>/assets/images/Group 10819@3x.png" />
+      </div>
+      <div class="col-md-5">
+        <div class="third-right-row">
           <h2>
             Become <br />
             an Author
@@ -152,130 +127,36 @@
           </p>
           <button class="btn">Get Started</button>
         </div>
-      </center>
+      </div>
     </div>
+
   </div>
   <div style="height:100%;">
     <div class="row">
-      <div class="col col-md-6">
+      <div class="col col-md-5">
         <div class="fourth-upper ">
           <div class="fourth-upper-left">
-            <img class="fourth-upper-left-images" src="<?=base_url()?>assets/images/fourth-upper-left.png" />
+            <img class="fourth-upper-left-images" src="<?=base_url()?>/assets/images/Group 10990@3x.png" />
           </div>
         </div>
       </div>
+      <div class="col-md-1"></div>
       <div class="col col-md-6">
         <div class="fourth-upper fourth-upper-right">
           <p>Unlimited downloads of 999,999+ creative assets</p>
-          <h2>Subscribe now and start creating</h2>
+          <h2>
+            Subscribe now and <br />
+            start creating
+          </h2>
           <button class="btn">Bring Me to The Premium Content</button>
         </div>
       </div>
     </div>
   </div>
-  <footer class="footer">
-    <div class="container-fluid text-center text-md-left">
-      <div class="row">
-        <!-- Contact -->
-        <div class="col-md-2 mt-md-0 mt-3">
-          <h5 class="text-uppercase">Contact Us</h5>
-          <ul class="list-unstyled mf-t">
-            <li>
-              <a>+62 345 6789 0123</a>
-            </li>
-            <li>
-              <a>admin@bliho.com</a>
-            </li>
-            <li>
-              <a href="#">Find a Store</a>
-            </li>
-          </ul>
-        </div>
-        <!-- Contact -->
-        <!-- Pembatas -->
-        <hr class="clearfix w-100 d-md-none pb-3" />
-        <!-- Pembatas -->
-        <!-- costumer -->
-        <div class="col-md-2 mt-md-0 mt-3">
-          <h5 class="text-uppercase">Costumer service</h5>
-          <ul class="list-unstyled mf-t">
-            <li>
-              <a href="#">Contact Us</a>
-            </li>
-            <li>
-              <a href="#">Ordering & Payments</a>
-            </li>
-            <li>
-              <a href="#">Shipping</a>
-            </li>
-            <li>
-              <a href="#">Returns</a>
-            </li>
-            <li>
-              <a href="#">FAQ</a>
-            </li>
-          </ul>
-        </div>
-        <!-- costumer -->
-        <!-- Pembatas -->
-        <hr class="clearfix w-100 d-md-none pb-3" />
-        <!-- Pembatas -->
-        <!-- information -->
-        <div class="col-md-2 mt-md-0 mt-3">
-          <h5 class="text-uppercase">Information</h5>
-          <ul class="list-unstyled mf-t">
-            <li>
-              <a href="#">About Bliho</a>
-            </li>
-            <li>
-              <a href="#">Work With Us</a>
-            </li>
-            <li>
-              <a href="#">Privacy Policy</a>
-            </li>
-            <li>
-              <a href="#">Terms & Conditions</a>
-            </li>
-            <li>
-              <a href="#">Press Enquiries</a>
-            </li>
-          </ul>
-        </div>
-        <!-- information -->
-        <!-- Pembatas -->
-        <hr class="clearfix w-100 d-md-none pb-3" />
-        <!-- Pembatas -->
-        <!-- mail -->
-        <div class="col-md-3 mt-md-0 mt-3">
-          <h5>Subscribe to Bliho Via Email</h5>
-          <ul class="list-unstyled mf-t">
-            <li>
-              <a>Excepteur sint occaecat cupidatat non proident, sunt in culpa
-                qui officia</a>
-            </li>
-            <li>
-              <div class="form-group">
-                <div class="row mt-2">
-                  <div class="col-md-7">
-                    <input type="email" class="form-control input-email" id="usr" placeholder="Email Address" />
-                    <input type="email" class="form-control input-email" id="type" placeholder="Email Address" />
-                  </div>
-                  <div class="col-md-5">
-                    <button class="btn ml-3 subscribe-btn">
-                      SUBSCRIBE
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </li>
-          </ul>
-        </div>
-        <!-- mail -->
-      </div>
-    </div>
-  </footer>
+  <div data-include="footer"></div>
 
-  <script src="<?=base_url()?>assets/js/anime.min.js"></script>
+
+  <script src="<?=base_url()?>/assets/js/anime.min.js"></script>
 
   <script>
     window.onscroll = function () {
@@ -295,7 +176,6 @@
         console.log(document.documentElement.scrollTop);
         $("nav").removeClass("navbar-scroll");
         $("nav").addClass("navbar-default");
-        
       }
     }
 
@@ -306,6 +186,48 @@
 
   <!-- Category -->
   <script>
+    let icon1 = anime({
+      targets: "#icon-1",
+      translateX: "0px",
+      translateY: "0px",
+      scale: 2,
+      borderRadius: "20%"
+    });
+
+    let icon2 = anime({
+      targets: "#icon-2",
+      translateX: "-150px",
+      translateY: "-270px",
+      scale: 0.7,
+      borderRadius: "20%"
+    });
+
+    let icon3 = anime({
+      targets: "#icon-3",
+      translateX: "-270px",
+      translateY: "-180px",
+      scale: 1,
+      borderRadius: "20%"
+    });
+
+    let icon4 = anime({
+      targets: "#icon-4",
+      translateX: "200px",
+      translateY: "230px",
+      scale: 1,
+      borderRadius: "20%"
+    });
+    let icon5 = anime({
+      targets: "#icon-5",
+      translateX: "50px",
+      translateY: "180px",
+      scale: 0.8,
+      borderRadius: "20%"
+    });
+
+
+
+
     let cat1 = anime({
       targets: "#cat-1",
       translateX: "0px",
@@ -313,36 +235,32 @@
       scale: 2.4,
       borderRadius: "50%",
     });
-
     let cat2 = anime({
       targets: "#cat-2",
       translateX: "-70px",
-      translateY: "-190px",
-      borderRadius: "15%",
-      filter: "grayscale(10100%)"
+      translateY: "-220px",
+      borderRadius: "50%",
+      filter: "grayscale(100%)"
     });
-
     let cat3 = anime({
       targets: "#cat-3",
-      translateX: "70px",
-      translateY: "-190px",
-      borderRadius: "15%",
+      translateX: "120px",
+      translateY: "-170px",
+      borderRadius: "50%",
       filter: "grayscale(100%)"
     });
-
     let cat4 = anime({
       targets: "#cat-4",
-      translateX: "70px",
-      translateY: "190px",
-      borderRadius: "15%",
+      translateX: "90px",
+      translateY: "220px",
+      borderRadius: "50%",
       filter: "grayscale(100%)"
     });
-
     let cat5 = anime({
       targets: "#cat-5",
-      translateX: "-70px",
-      translateY: "190px",
-      borderRadius: "15%",
+      translateX: "-120px",
+      translateY: "170px",
+      borderRadius: "50%",
       filter: "grayscale(100%)"
     });
 
@@ -354,32 +272,91 @@
       {
         icon: 2,
         xpos: -70,
-        ypos: -190
+        ypos: -220
       },
       {
         icon: 3,
-        xpos: 70,
-        ypos: -190
+        xpos: 120,
+        ypos: -170
       },
       {
         icon: 4,
-        xpos: 70,
-        ypos: 190
+        xpos: 90,
+        ypos: 220
       },
       {
         icon: 5,
-        xpos: -70,
-        ypos: 190
+        xpos: -120,
+        ypos: 170
       },
     ]
+
+    let posIcon = [{
+        icon: 1,
+        xpos: 0,
+        ypos: 0,
+        scale: 1.4
+      },
+      {
+        icon: 2,
+        xpos: -150,
+        ypos: -270,
+        scale: 0.7
+      },
+      {
+        icon: 3,
+        xpos: -270,
+        ypos: -180,
+        scale: 1
+      },
+      {
+        icon: 4,
+        xpos: 200,
+        ypos: 140,
+        scale: 1
+      },
+      {
+        icon: 5,
+        xpos: 120,
+        ypos: 180,
+        scale: 0.8
+      }
+    ];
+
+
+    let selectorPos = [-50, -25, 0, 25, 50];
+
+    let xpostrans = [0, 0, 0, 25, -150];
+    let ypostrans = [0, 0, 50, 25, 50];
+
+
+
+    let animIcon = 1;
+    let animIconTemp = 1;
+
+
     let animList = 1;
     let animListTemp = 1;
+    var categoryList = document.querySelectorAll(".category-list-item");
+    var categoryIcon = document.querySelectorAll(".category-icon-item");
 
-    var buttonEl = document.querySelectorAll(".category-list-item");
-    var buttonOl = document.querySelectorAll(".category-icon-item");
+    let animText;
 
-    async function animateButton(el, scale, duration, elasticity, translateX, translateY, borderRadius, easing, filter) {
-      await anime.remove(el);
+
+    var icons = document.querySelectorAll(".icon-images");
+
+    const animateCategoryIcon = (
+      el,
+      scale,
+      duration,
+      elasticity,
+      translateX,
+      translateY,
+      borderRadius,
+      easing,
+      filter
+    ) => {
+      anime.remove(el);
       anime({
         targets: el,
         opacity: [1, 0.75, 1],
@@ -391,87 +368,122 @@
         borderRadius: borderRadius,
         easing: easing,
         filter: filter
-      }).finished;
+      });
+    };
+
+
+    for (let i = 0; i < icons.length; i++) {
+      icons[i].addEventListener(
+        "mouseenter",
+        function (e) {
+          enterIconsList(e.target);
+        },
+        false
+      );
     }
 
-    function enterButton(el) {
-      animListTemp = animList;
-      animList = el.getAttribute("key");
-     
+    enterIconsList = el => {
+      animIconTemp = animIcon;
+      animIcon = el.getAttribute("keys");
+      console.log("icon terdahulu terpilih = " + animIconTemp);
 
-      var hei = $(".upper-right-h2").html();
-      console.log(hei);
-      $("h2.upper-right-h2").text(el.text);
-      
+      console.log("anim icon terpilih = " + animIcon);
 
-
-      // for (let i = 0; i < position.length; i++) {
-      //   if (animList == position[i].icon) {
-      //     position[i].xpos
-      //     position[i].xpos = position[animListTemp].xpos;
-      //     position[i].ypos = position[animListTemp].ypos;
-      //   }
-      // }
-
-   
-
-      if (animListTemp != animList) {
-
-        animateButton(
-          buttonOl[animList - 1], 2.4, 250, 0, 0, 0, "50%", "easeInOutExpo", "grayscale(0%)"
+      if (animIconTemp != animIcon) {
+        animateCategoryIcon(
+          icons[animIcon - 1],
+          1.3,
+          250,
+          0,
+          (posIcon[animIcon - 1].xpos + xpostrans[animIcon - 1]) + "px",
+          (posIcon[animIcon - 1].ypos + ypostrans[animIcon - 1]) + "px",
+          "20%",
+          "easeInOutExpo",
+          "grayscale(0%)"
         );
 
-        
-
-        animateButton(buttonOl[animListTemp - 1], 1.0, 250, 1000, (position[animList - 1].xpos + "px"),
-          (position[animList - 1].ypos + "px"), "15%",
+        animateCategoryIcon(
+          icons[animIconTemp - 1],
+          posIcon[animIconTemp - 1].scale,
+          250,
+          100,
+          posIcon[animIconTemp - 1].xpos + "px",
+          posIcon[animIconTemp - 1].ypos + "px",
+          "20%",
           "easeInOutExpo",
-          "grayscale(100%)");
+          "grayscale(0%)"
+        );
+
+        // posIcon[animIconTemp - 1].xpos = posIcon[animIcon - 1].xpos;
+        // posIcon[animIconTemp - 1].ypos = posIcon[animIcon - 1].ypos;
+        // posIcon[animIconTemp - 1].scale = posIcon[animIcon - 1].scale;
+
+      }
+    };
+
+    const enterCategoryList = el => {
+      animListTemp = animList;
+      animList = el.getAttribute("key");
+      animText = el.getAttribute("value");
+      console.log(el);
+      $(categoryList[animListTemp - 1]).removeClass('selected');
+
+      $(el).addClass('selected');
+      // $(categoryList[animList - 1]).addClass('selected');
+
+      console.log(el);
+
+      $("#selector").css(
+        "transform",
+        "translate(0px," + selectorPos[animList - 1] + "px)"
+      );
+
+      $("#desc-title").html(animText);
+
+      if (animListTemp != animList) {
+        animateCategoryIcon(
+          categoryIcon[animList - 1],
+          2.4,
+          250,
+          0,
+          0,
+          0,
+          "50%",
+          "easeInOutExpo",
+          "grayscale(0%)"
+        );
+
+        animateCategoryIcon(
+          categoryIcon[animListTemp - 1],
+          1.0,
+          250,
+          1000,
+          position[animList - 1].xpos + "px",
+          position[animList - 1].ypos + "px",
+          "50%",
+          "easeInOutExpo",
+          "grayscale(100%)"
+        );
+
+        var src = ["images/Group 10988@3x.png", "images/Group 10987@4x.png", "images/Group 10986@3x.png",
+          "images/Group 10990@2x.png", "images/Group 10989@3x.png"
+        ]
+        $("#fullsize").attr("src", "<?=base_url()?>/assets/"+src[animList - 1]);
 
         position[animListTemp - 1].xpos = position[animList - 1].xpos;
         position[animListTemp - 1].ypos = position[animList - 1].ypos;
       }
+    };
 
 
-    }
-
-    // function leaveButton(animListTemp) {
-    // let animList = el.getAttribute("key");
-    // console.log(animListTemp);
-
-
-    // let translateX = 0;
-    // let translateY = 0;
-
-    // for (let i = 0; i < position.length; i++) {
-    //   if (animListTemp == position[i].icon) {
-    //     translateX = position[i].xpos;
-    //     translateY = position[i].ypos;
-    //   }
-    // }
-
-    // animateButton(buttonOl[animList - 1], 1.0, 20, 1000, (translateX + "px"), (translateY + "px"), "15%",
-    //   "spring(0.5, 100, 7, 0)",
-    //   "grayscale(100%)");
-
-    // }
-
-    for (var i = 0; i < buttonEl.length; i++) {
-      buttonEl[i].addEventListener(
+    for (var i = 0; i < categoryList.length; i++) {
+      categoryList[i].addEventListener(
         "mouseenter",
         function (e) {
-          enterButton(e.target);
+          enterCategoryList(e.target);
         },
         false
       );
-
-      // buttonEl[i].addEventListener(
-      //   "mouseleave",
-      //   function (e) {
-      //     leaveButton(e.target);
-      //   },
-      //   false
-      // );
     }
   </script>
 </body>
