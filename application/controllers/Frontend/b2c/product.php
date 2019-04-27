@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Login extends CI_Controller {
+class Product extends CI_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -27,21 +27,7 @@ class Login extends CI_Controller {
 	public function index()
 	{
 		$this->load->view('frontend/b2c/main/header');
-		$this->load->view('frontend/b2c/content/content-signin');
-		$this->load->view('frontend/b2c/main/footer');
-	}
-	public function payment(){
-		$this->load->view('frontend/b2c/main/header');
-		$this->load->view('payment');
-	}
-	public function signin(){
-		$this->load->view('frontend/b2c/main/header');
-		$this->load->view('frontend/b2c/content/content-signin');
-		$this->load->view('frontend/b2c/main/footer');
-	}
-	public function signup(){
-		$this->load->view('frontend/b2c/main/header');
-		$this->load->view('frontend/b2c/content/content-signup');
+		$this->load->view('frontend/b2c/content/content-apply');
 		$this->load->view('frontend/b2c/main/footer');
 	}
 }

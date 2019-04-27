@@ -55,3 +55,6 @@ $route['translate_uri_dashes'] = true;
 
 $route['admin'] 				                  = 'admin/Dashboard';
 $route['admin/login'] 				                  = 'admin/Login';
+$route['bayar'] = 'welcome/payment';
+$route['signin'] = 'frontend/b2c/login';
+$route['signup'] = 'welcome/signup';

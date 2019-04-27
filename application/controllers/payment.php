@@ -26,6 +26,7 @@ class Payment extends CI_Controller {
     }
 	public function index()
 	{
+		$this->load->view('frontend/b2c/main/header');
 		$this->load->view('payment');
 	}
 }

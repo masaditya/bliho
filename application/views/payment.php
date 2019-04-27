@@ -1,4 +1,3 @@
-<?php include 'frontend/b2c/main/header.php'; ?>
 <body>
 <div class="video">
     <div class="row payment-container">
@@ -85,8 +84,8 @@
             <label class="radio-inline control-label">Credit Card</label>
           </div>
           <div class="flex-logo">
-            <img style="height:30px;" src="/images/mastercard.png" alt="" />
-            <img style="height:25px;" src="/images/Visa.png" alt="" />
+            <img style="height:30px;" src="<?=base_url()?>/assets/images/mastercard.png" alt="" />
+            <img style="height:25px;" src="<?=base_url()?>/assets/images/Visa.png" alt="" />
           </div>
         </div>
         <hr />
@@ -124,14 +123,14 @@
             <label class="radio-inline control-label">Paypal</label>
           </div>
           <div class="flex-logo">
-            <img style="height:40px;" src="images/paypal.png" alt="" />
+            <img style="height:40px;" src="<?=base_url()?>/assets/images/paypal.png" alt="" />
           </div>
         </div>
         <hr />
         <div class="row wallet">
           <div class="col-sm-1"></div>
           <div class="col-sm-2">
-            <img style="height:50px;" src="/images/wallet.png" alt="" />
+            <img style="height:50px;" src="<?=base_url()?>/assets/images/wallet.png" alt="" />
           </div>
           <div class="col-sm-8">
             <p style="font-size:13px;">
@@ -217,7 +216,7 @@
       </div>
       <div class="image-container-right">
         <div class="image-container">
-          <img src="/images/Group 10986@3x.png" alt="" />
+          <img src="<?=base_url()?>/assets/images/Group 10986@3x.png" alt="" />
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
             dolore magna
             aliqua. Ut</p>
