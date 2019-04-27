@@ -8,16 +8,14 @@
     integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
     integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
-  <link rel="stylesheet" href="<?=base_url()?>/assets/css/css/style.css" />
-  <link rel="stylesheet" href="<?=base_url()?>/assets/css/css/category.css" />
-  <link rel="stylesheet" href="<?=base_url()?>/assets/css/css/payment.css" />
-
-  <script src="<?=base_url()?>/assets/js/loader.js"></script>
+  <link rel="stylesheet" href="<?=base_url()?>assets/css/css/style.css" />
+  <link rel="stylesheet" href="<?=base_url()?>assets/css/css/category.css" />
+  <link rel="stylesheet" href="<?=base_url()?>assets/css/css/payment.css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
-
+<div class="video">
 <nav id="navbar" class="navbar navbar-default navbar-expand-lg navbar-light">
-    <a class="navbar-brand brand-text" href="<?= base_url() ?>"><img style="width:104px;" src="<?=base_url()?>/assets/images/temp/logo.png" /></a>
+    <a class="navbar-brand brand-text" href="<?= base_url() ?>index.php"><img style="width:104px;" src="<?=base_url()?>/assets/images/temp/logo.png" /></a>
     <div class="searchContainer">
         <i class="fa fa-search searchIcon"></i>
         <input class="searchBox" type="search" name="search" placeholder="Search" />
@@ -34,10 +32,10 @@
                 <a class="nav-link nav-button-text" href="<?= base_url() ?>payment">Pricing</a>
             </li>
             <li class="nav-item nav-button">
-                <a class="nav-link nav-button-text" href="signup.html">Create Account</a>
+                <a class="nav-link nav-button-text" href="<?= base_url() ?>welcome">Create Account</a>
             </li>
             <li class="nav-item nav-button">
-                <a href="signin.html" class="btn sign-in sign-in-text my-2 my-sm-0" style="width:100px;">
+                <a href="<?= base_url() ?>welcome" class="btn sign-in sign-in-text my-2 my-sm-0" style="width:100px;">
                     Sign In
                     <i class="fas fa-sign-in-alt" style="margin-left:15%;"></i>
                 </a>
@@ -45,3 +43,4 @@
         </ul>
     </div>
 </nav>
+</div>

@@ -253,4 +253,64 @@
       </div>
     </div>
   </div>
+    <script>
+    window.onscroll = function () {
+      scrollFunction();
+    };
+    var x = $("#navbar");
+
+    function scrollFunction() {
+      if (
+        document.documentElement.scrollTop > 1000 ||
+        document.body.scrollTop > 700
+      ) {
+        document.getElementById("navbar").style.top = "0";
+        $("nav").removeClass("navbar-default");
+        $("nav").addClass("navbar-scroll");
+      } else {
+        console.log(document.documentElement.scrollTop);
+        $("nav").removeClass("navbar-scroll");
+        $("nav").addClass("navbar-default");
+      }
+    }
+
+    $("#type").keyup(function () {
+      $("#usr").val($(this).val() + " example");
+    });
+  </script>
+
+  <script>
+    let radioMonth = document.getElementById("radio-monthly");
+    let radioAnual = document.getElementById("radio-anually");
+    let confirmCard = document.querySelectorAll(".confirm-card");
+    let creditCardOps = document.getElementsByClassName("cc-option")
+    let billingAddress = document.getElementsByClassName("option-address")
+    $(radioMonth).click(function () {
+      $(confirmCard[0]).addClass('confirm-card-selected')
+      $(confirmCard[1]).removeClass('confirm-card-selected')
+    })
+    $(radioAnual).click(function () {
+      $(confirmCard[1]).addClass('confirm-card-selected')
+      $(confirmCard[0]).removeClass('confirm-card-selected')
+    })
+
+    $(document).ready(function () {
+      $(creditCardOps).hide();
+      $(billingAddress).hide();
+    })
+    $('#radio-cc').click(function () {
+      $(creditCardOps).show();
+    })
+    $('#radio-paypal').click(function () {
+      $(creditCardOps).hide();
+    })
+
+    $('#radio-billing-address').click(function () {
+      $(billingAddress).show()
+    })
+
+    $('#radio-same-address').click(function () {
+      $(billingAddress).hide()
+    })
+  </script>
   </body>

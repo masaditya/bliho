@@ -53,6 +53,7 @@ $route['default_controller'] = 'welcome';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = true;
 
+
 $route['admin'] 				                  = 'admin/Dashboard';
 $route['admin/login'] 				                  = 'admin/Login';
 $route['bayar'] = 'welcome/payment';

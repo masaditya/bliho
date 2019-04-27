@@ -1,9 +1,5 @@
-
-
-
 <body>
   <div class="video">
-    <?php include 'frontend/b2c/main/header.php'; ?>
     <div class="container-fluid content">
       <div class="row top-padding">
         <div class="col col-md-6 upper-left">
