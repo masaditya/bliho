@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Templates extends CI_Controller {
+class Music extends CI_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -27,14 +27,14 @@ class Templates extends CI_Controller {
 	public function index()
 	{
 		$this->load->view('frontend/b2c/main/header');
-		$this->load->view('frontend/b2c/content/templates/catalog');
+		$this->load->view('frontend/b2c/content/music/catalog');
 		$this->load->view('frontend/b2c/main/footer');
 	}
 
 	public function preview()
 	{
 		$this->load->view('frontend/b2c/main/header');
-		$this->load->view('frontend/b2c/content/templates/preview');
+		$this->load->view('frontend/b2c/content/music/preview');
 		$this->load->view('frontend/b2c/main/footer');
 	}
 }

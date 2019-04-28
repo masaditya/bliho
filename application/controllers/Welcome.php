@@ -44,4 +44,13 @@ class Welcome extends CI_Controller {
 		$this->load->view('frontend/b2c/content/content-signup');
 		$this->load->view('frontend/b2c/main/footer');
 	}
+
+	public function templates()
+	{
+		$this->load->view('frontend/b2c/main/header');
+		$this->load->view('frontend/b2c/content/templates/catalog');
+		$this->load->view('frontend/b2c/main/footer');
+	}
+
+	
 }
