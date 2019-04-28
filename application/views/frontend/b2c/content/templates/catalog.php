@@ -302,9 +302,7 @@
         let showFilter = true;
 
         $(document).ready(function () {
-            // $(show).hide();
             changeContainer(!showFilter)
-
         });
 
         $(showButton).click(function () {

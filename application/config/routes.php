@@ -60,4 +60,9 @@ $route['bayar'] = 'welcome/payment';
 $route['signin'] = 'frontend/b2c/login';
 $route['signup'] = 'welcome/signup';
 $route['templates'] = 'welcome/templates';
+$route['music'] = 'welcome/music';
+$route['stock-images'] = 'welcome/stockimages';
+$route['illustration'] = 'welcome/illustration';
+$route['training-manual'] = 'welcome/trainingmanual';
+
 

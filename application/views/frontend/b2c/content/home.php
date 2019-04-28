@@ -28,22 +28,23 @@
               <ul class="category-list">
                 <li>
                   <a key="1" value="Training Manual" class="category-list-item"
-                    href="pages/trainingManual/catalogTM.html">Training
-                    Manual</a>
+                    href="<?= base_url()?>index.php/training-manual">Training Manual</a>
                 </li>
                 <li>
-                  <a key="2" value="Music" class="category-list-item" href="/pages/music/catalogMusic.html">Music</a>
+                  <a key="2" value="Music" class="category-list-item" 
+                  href="<?= base_url()?>index.php/music">Music</a>
                 </li>
                 <li>
-                  <a key="3" value="Illustrations" class="category-list-item" href="categories.html">Illustrations</a>
+                  <a key="3" value="Illustrations" class="category-list-item" 
+                  href="<?= base_url()?>index.php/illustration">Illustrations</a>
                 </li>
                 <li>
                   <a key="4" value="Templates" class="category-list-item"
-                    href="pages/template/catalogTemplate.html">Templates</a>
+                    href="<?= base_url()?>index.php/templates">Templates</a>
                 </li>
                 <li>
                   <a key="5" value="Stock Images" class="category-list-item"
-                    href="pages/stockImage/catalogStockImg.html">Stock Images</a>
+                    href="<?= base_url()?>index.php/stock-images">Stock Images</a>
                 </li>
               </ul>
               <form action="categories.html">

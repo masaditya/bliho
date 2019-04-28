@@ -52,5 +52,26 @@ class Welcome extends CI_Controller {
 		$this->load->view('frontend/b2c/main/footer');
 	}
 
+	public function stockimages()
+	{
+		$this->load->view('frontend/b2c/main/header');
+		$this->load->view('frontend/b2c/content/stock-images/catalog');
+		$this->load->view('frontend/b2c/main/footer');
+	}public function music()
+	{
+		$this->load->view('frontend/b2c/main/header');
+		$this->load->view('frontend/b2c/content/music/catalog');
+		$this->load->view('frontend/b2c/main/footer');
+	}public function trainingmanual()
+	{
+		$this->load->view('frontend/b2c/main/header');
+		$this->load->view('frontend/b2c/content/training-manual/catalog');
+		$this->load->view('frontend/b2c/main/footer');
+	}public function illustration()
+	{
+		$this->load->view('frontend/b2c/main/header');
+		$this->load->view('frontend/b2c/content/illustration/catalog');
+		$this->load->view('frontend/b2c/main/footer');
+	}
 	
 }

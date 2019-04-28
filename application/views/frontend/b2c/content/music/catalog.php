@@ -13,8 +13,8 @@
       integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="../../css/style.css" />
-    <link rel="stylesheet" href="../../css/category.css" />
+    <link rel="stylesheet" href=" <?=base_url()?>assets/css/css/style.css" />
+    <link rel="stylesheet" href="<?=base_url()?>assets/css/css/category.css" />
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -30,7 +30,7 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="../../css/music.css" />
+    <link rel="stylesheet" href="<?=base_url()?>assets/css/css/music.css" />
   </head>
 
   <body>
@@ -155,7 +155,7 @@
                   </a>
                 </div>
                 <div class="col-sm-1 button-play">
-                  <input type="button" id="btn-play" />
+                  <input type="button" class="btn-play" />
                 </div>
                 <div class="col-sm-6 audio">
                   <div class="audio-spectrum"></div>
@@ -185,7 +185,7 @@
                   </div>
                 </div>
                 <div class="col-sm-1 button-play">
-                  <input type="button" id="btn-play" />
+                  <input type="button" class="btn-play" />
                 </div>
                 <div class="col-sm-6 audio">
                   <div class="audio-spectrum"></div>
@@ -215,7 +215,7 @@
                   </div>
                 </div>
                 <div class="col-sm-1 button-play">
-                  <input type="button" id="btn-play" />
+                  <input type="button" class="btn-play" />
                 </div>
                 <div class="col-sm-6 audio">
                   <div class="audio-spectrum"></div>
@@ -245,7 +245,7 @@
                   </div>
                 </div>
                 <div class="col-sm-1 button-play">
-                  <input type="button" id="btn-play" />
+                  <input type="button" class="btn-play" />
                 </div>
                 <div class="col-sm-6 audio">
                   <div class="audio-spectrum"></div>
@@ -275,7 +275,7 @@
                   </div>
                 </div>
                 <div class="col-sm-1 button-play">
-                  <input type="button" id="btn-play" />
+                  <input type="button" class="btn-play" />
                 </div>
                 <div class="col-sm-6 audio">
                   <div class="audio-spectrum"></div>
@@ -306,107 +306,6 @@
           </center>
         </div>
       </div>
-      <footer class="footer">
-        <div class="container-fluid text-center text-md-left">
-          <div class="row">
-            <div class="col-md-2 mt-md-0 mt-3">
-              <h5 class="text-uppercase">Contact Us</h5>
-              <ul class="list-unstyled mf-t">
-                <li>
-                  <a>+62 345 6789 0123</a>
-                </li>
-                <li>
-                  <a>admin@bliho.com</a>
-                </li>
-                <li>
-                  <a href="#">Find a Store</a>
-                </li>
-              </ul>
-            </div>
-            <hr class="clearfix w-100 d-md-none pb-3" />
-            <div class="col-md-2 mt-md-0 mt-3">
-              <h5 class="text-uppercase">Costumer service</h5>
-              <ul class="list-unstyled mf-t">
-                <li>
-                  <a href="#">Contact Us</a>
-                </li>
-                <li>
-                  <a href="#">Ordering & Payments</a>
-                </li>
-                <li>
-                  <a href="#">Shipping</a>
-                </li>
-                <li>
-                  <a href="#">Returns</a>
-                </li>
-                <li>
-                  <a href="#">FAQ</a>
-                </li>
-              </ul>
-            </div>
-            <hr class="clearfix w-100 d-md-none pb-3" />
-            <div class="col-md-2 mt-md-0 mt-3">
-              <h5 class="text-uppercase">Information</h5>
-              <ul class="list-unstyled mf-t">
-                <li>
-                  <a href="#">About Bliho</a>
-                </li>
-                <li>
-                  <a href="#">Work With Us</a>
-                </li>
-                <li>
-                  <a href="#">Privacy Policy</a>
-                </li>
-                <li>
-                  <a href="../../assets/Radwips-Yumeterou.mp3"
-                    >Terms & Conditions</a
-                  >
-                </li>
-                <li>
-                  <a href="#">Press Enquiries</a>
-                </li>
-              </ul>
-            </div>
-            <hr class="clearfix w-100 d-md-none pb-3" />
-            <div class="col-md-3 mt-md-0 mt-3">
-              <h5>Subscribe to Bliho Via Email</h5>
-              <ul class="list-unstyled mf-t">
-                <li>
-                  <a
-                    >Excepteur sint occaecat cupidatat non proident, sunt in
-                    culpa qui officia</a
-                  >
-                </li>
-                <li>
-                  <div class="form-group">
-                    <div class="row mt-2">
-                      <div class="col-md-7">
-                        <input
-                          type="email"
-                          class="form-control input-email"
-                          id="usr"
-                          placeholder="Email Address"
-                        />
-                        <input
-                          type="email"
-                          class="form-control input-email"
-                          id="type"
-                          placeholder="Email Address"
-                        />
-                      </div>
-                      <div class="col-md-5">
-                        <button class="btn ml-3 subscribe-btn">
-                          SUBSCRIBE
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </footer>
     </div>
 
     <script>
@@ -441,8 +340,9 @@
       let items = document.getElementById("items-row");
       let showFilter = true;
 
-      // $(document).ready(function () {
-      // });
+        $(document).ready(function () {
+            changeContainer(!showFilter)
+        });
 
       $(showButton).click(function() {
         console.log(showFilter);
@@ -488,13 +388,15 @@
     <script src="https://unpkg.com/wavesurfer.js"></script>
     <script>
       var container = document.querySelectorAll(".audio-spectrum");
-
+      var ws = [1, 2, 3, 4, 5]
       var buttons = {
-        play: document.getElementById("btn-play")
+        play: document.querySelectorAll(".btn-play")
       };
+      for (let i = 0; i < container.length; i++) {
+            console.log(container[i]);
 
-      var spectrum = WaveSurfer.create({
-        container: ".audio-spectrum",
+      ws[i] = WaveSurfer.create({
+        container: container[i],
         waveColor: "#000",
         progressColor: "#03a9f4",
         height: "70",
@@ -505,18 +407,22 @@
         minPxPerSec: 1,
         barWidth: 2
       });
-      buttons.play.addEventListener(
+    }
+    for (let index = 0; index < ws.length; index++) {
+      buttons.play[index].addEventListener(
         "click",
         function() {
-          spectrum.play();
+          ws[index].play();
           buttons.play.disabled = true;
         },
         false
       );
-
-      spectrum.on("ready", function() {
-        buttons.play.disabled = false;
-      });
+    };
+      
+      // for
+      // spectrum.on("ready", function() {
+      //   buttons.play.disabled = false;
+      // });
 
       window.addEventListener(
         "resize",
@@ -532,8 +438,10 @@
         },
         false
       );
+        for (let i = 0; i < ws.length; i++) {
+      ws[i].load("<?=base_url()?>assets/dummy/Radwips-Yumeterou.mp3");
 
-      spectrum.load("../../assets/Radwips-Yumeterou.mp3");
+        }
     </script>
   </body>
 </html>

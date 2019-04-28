@@ -6,8 +6,8 @@
     integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
     integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
-  <link rel="stylesheet" href="<?=base_url() ?>assets/css/css//style.css" />
-  <link rel="stylesheet" href="<?=base_url() ?>assets/css/css//category.css" />
+  <link rel="stylesheet" href="<?=base_url() ?>assets/css/css/style.css" />
+  <link rel="stylesheet" href="<?=base_url() ?>assets/css/css/category.css" />
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
   </script>
@@ -17,10 +17,13 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
   </script>
+  <script src="js/loader.js"></script>
+
 </head>
 
 <body>
-<div class="video">
+  <div class="video">
+
     <div id="categories" class="container-fluid content">
       <div id="first">
         <div class="first-inside row">
@@ -64,89 +67,111 @@
         <div class="row">
           <div id="filter-row" class="col-lg-2">
             <div class="filter-product">
-              <li id="title"> <strong> Price </strong> </li>
+              <li id="title"> <strong> Products </strong> </li>
               <hr />
+              <li id="dropdown-departement" class="dropdown">
+                Departement <span class="fas fa-angle-down"></span>
+              </li>
               <div id="filter-cb" class="filter-checkbox">
                 <form class="form-filter">
                   <div class="form-group">
                     <input type="checkbox" id="html" />
-                    <label for="html">Paid</label>
+                    <label for="html">Front Office</label>
                   </div>
                   <div class="form-group">
                     <input type="checkbox" id="css" />
-                    <label for="css">Free</label>
+                    <label for="css">House Keeping</label>
                   </div>
-
+                  <div class="form-group">
+                    <input type="checkbox" id="javascript" />
+                    <label for="javascript">Food and Beverages</label>
+                  </div>
+                  <div class="form-group">
+                    <input type="checkbox" id="javascript" />
+                    <label for="javascript">Public Area</label>
+                  </div>
                 </form>
               </div>
+              <li class="dropdown">Type <span class="fas fa-angle-down"></span></li>
 
               <li id="title"> <strong> Price </strong> </li>
               <hr>
-              <!-- <li id="dropdown-premium" class="dropdown">
-                      Premium <span class="fas fa-angle-down"></span>
-                  </li> -->
+              <li id="dropdown-premium" class="dropdown">
+                Premium <span class="fas fa-angle-down"></span>
+              </li>
               <div id="filter-premium-cb" class="filter-checkbox">
                 <form class="form-filter">
                   <div class="form-group">
                     <input type="checkbox" id="html" />
-                    <label for="html">Still Image</label>
+                    <label for="html">Front Office</label>
                   </div>
                   <div class="form-group">
                     <input type="checkbox" id="css" />
-                    <label for="css">Human Interest</label>
+                    <label for="css">House Keeping</label>
                   </div>
                   <div class="form-group">
-                    <input type="checkbox" id="css" />
-                    <label for="css">Nature</label>
+                    <input type="checkbox" id="javascript" />
+                    <label for="javascript">Food and Beverages</label>
+                  </div>
+                  <div class="form-group">
+                    <input type="checkbox" id="javascript" />
+                    <label for="javascript">Public Area</label>
                   </div>
                 </form>
               </div>
+              <li>Free</li>
+              <li id="title"> <strong> Color </strong> </li>
+              <hr>
+              <button class="color-button"></button>
+              <button class="color-button"></button>
+              <button class="color-button"></button>
+              <button class="color-button"></button>
+              <button class="color-button"></button>
+              <button class="color-button"></button>
+              <button class="color-button"></button>
+              <button class="color-button"></button>
+              <button class="color-button"></button>
             </div>
           </div>
           <div id="items-row" class="col-lg-10">
             <div class="item-row row">
               <div class="col col-md-4">
-                <a href="previewStockImage.html">
-
-                  <div class="card" style="width: 100%; border-radius: 5%;">
-                    <img class="card-img-top" src="<?=base_url() ?>assets/images/temp/1.png" alt="Card image cap" />
-                    <div class="card-body">
-                      <div class="row">
-                        <div class="item col col-md-7 ">
-                          <p class="item-name">Stock Image</p>
-                          <p class="item-author">by Author Name</p>
-                        </div>
-                        <div class="item col col-md-3">
-                          <p class="item-type-name">Ai,PNG</p>
-                        </div>
-                        <div class="item download" class="col col-md-2">
-                          <i class="fas fa-arrow-down"></i>
-                        </div>
+                <div class="card" style="width: 100%; border-radius: 5%;">
+                  <img class="card-img-top" src="<?=base_url() ?>assets/images/temp/1.png" alt="Card image cap" />
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="item col col-md-7 ">
+                        <p class="item-name">Illustration Name - Vector</p>
+                        <p class="item-author">by Author Name</p>
+                      </div>
+                      <div class="item col col-md-3">
+                        <p class="item-type-name">Ai,PNG</p>
+                      </div>
+                      <div class="item download" class="col col-md-2">
+                        <i class="fas fa-arrow-down"></i>
                       </div>
                     </div>
                   </div>
-                </a>
+                </div>
               </div>
               <div class="col col-md-4">
-                <a href="previewStockImage.html">
-                  <div class="card" style="width: 100%; border-radius: 5%;">
-                    <img class="card-img-top" src="<?=base_url() ?>assets/images/temp/2.png" alt="Card image cap" />
-                    <div class="card-body">
-                      <div class="row">
-                        <div class="item col col-md-7 ">
-                          <p class="item-name">Stock Image</p>
-                          <p class="item-author">by Author Name</p>
-                        </div>
-                        <div class="item col col-md-3">
-                          <p class="item-type-name">Ai,PNG</p>
-                        </div>
-                        <div class="item download" class="col col-md-2">
-                          <i class="fas fa-arrow-down"></i>
-                        </div>
+                <div class="card" style="width: 100%; border-radius: 5%;">
+                  <img class="card-img-top" src="<?=base_url() ?>assets/images/temp/2.png" alt="Card image cap" />
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="item col col-md-7 ">
+                        <p class="item-name">Illustration Name - Vector</p>
+                        <p class="item-author">by Author Name</p>
+                      </div>
+                      <div class="item col col-md-3">
+                        <p class="item-type-name">Ai,PNG</p>
+                      </div>
+                      <div class="item download" class="col col-md-2">
+                        <i class="fas fa-arrow-down"></i>
                       </div>
                     </div>
                   </div>
-                </a>
+                </div>
               </div>
               <div class="col col-md-4">
                 <div class="card" style="width: 100%; border-radius: 5%;">
@@ -154,7 +179,7 @@
                   <div class="card-body">
                     <div class="row">
                       <div class="item col col-md-7 ">
-                        <p class="item-name">Stock Image</p>
+                        <p class="item-name">Illustration Name - Vector</p>
                         <p class="item-author">by Author Name</p>
                       </div>
                       <div class="item col col-md-3">
@@ -175,7 +200,7 @@
                   <div class="card-body">
                     <div class="row">
                       <div class="item col col-md-7 ">
-                        <p class="item-name">Stock Image</p>
+                        <p class="item-name">Illustration Name - Vector</p>
                         <p class="item-author">by Author Name</p>
                       </div>
                       <div class="item col col-md-3">
@@ -194,7 +219,7 @@
                   <div class="card-body">
                     <div class="row">
                       <div class="item col col-md-7 ">
-                        <p class="item-name">Stock Image</p>
+                        <p class="item-name">Illustration Name - Vector</p>
                         <p class="item-author">by Author Name</p>
                       </div>
                       <div class="item col col-md-3">
@@ -213,7 +238,7 @@
                   <div class="card-body">
                     <div class="row">
                       <div class="item col col-md-7 ">
-                        <p class="item-name">Stock Image</p>
+                        <p class="item-name">Illustration Name - Vector</p>
                         <a href="google.com">
                           <p class="item-author">by Author Name</p>
                         </a>
@@ -281,10 +306,9 @@
     let items = document.getElementById('items-row')
     let showFilter = true;
 
-    
-   $(document).ready(function () {
-            changeContainer(!showFilter)
-        });
+    $(document).ready(function () {
+      changeContainer(!showFilter)
+    });
 
     $(showButton).click(function () {
       console.log(showFilter);

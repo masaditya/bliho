@@ -36,11 +36,11 @@
                 </li>
                 <li>
                   <a key="4" value="Templates" class="category-list-item"
-                    href="pages/template/catalogTemplate.html">Templates</a>
+                    href="<?=base_url() ?>index.php/templates">Ts</a>
                 </li>
                 <li>
                   <a key="5" value="Stock Images" class="category-list-item"
-                    href="pages/stockImage/catalogStockImg.html">Stock Images</a>
+                    href=" <?=base_url() ?> index.php/templates">Stock Images</a>
                 </li>
               </ul>
               <form action="categories.html">
