@@ -27,14 +27,14 @@ class Trainingmanual extends CI_Controller {
 	public function index()
 	{
 		$this->load->view('frontend/b2c/main/header');
-		$this->load->view('frontend/b2c/content/templates/catalog');
+		$this->load->view('frontend/b2c/content/training-manual/catalog');
 		$this->load->view('frontend/b2c/main/footer');
 	}
 
 	public function preview()
 	{
 		$this->load->view('frontend/b2c/main/header');
-		$this->load->view('frontend/b2c/content/templates/preview');
+		$this->load->view('frontend/b2c/content/training-manual/preview');
 		$this->load->view('frontend/b2c/main/footer');
 	}
 }

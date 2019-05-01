@@ -29,13 +29,13 @@
                 <a class="nav-link nav-button-text" href="#">License</a>
             </li>
             <li class="nav-item nav-button">
-                <a class="nav-link nav-button-text" href="<?= base_url() ?>payment">Pricing</a>
+                <a class="nav-link nav-button-text" href="<?= base_url() ?>index.php/payment">Pricing</a>
             </li>
             <li class="nav-item nav-button">
-                <a class="nav-link nav-button-text" href="<?= base_url() ?>welcome">Create Account</a>
+                <a class="nav-link nav-button-text" href="<?= base_url() ?>index.php/user/signup">Create Account</a>
             </li>
             <li class="nav-item nav-button">
-                <a href="<?= base_url() ?>welcome" class="btn sign-in sign-in-text my-2 my-sm-0" style="width:100px;">
+                <a href="<?= base_url() ?>index.php/user/signin" class="btn sign-in sign-in-text my-2 my-sm-0" style="width:100px;">
                     Sign In
                     <i class="fas fa-sign-in-alt" style="margin-left:15%;"></i>
                 </a>

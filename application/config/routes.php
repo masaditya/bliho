@@ -56,13 +56,29 @@ $route['translate_uri_dashes'] = true;
 
 $route['admin'] 				                  = 'admin/Dashboard';
 $route['admin/login'] 				                  = 'admin/Login';
+
+// user auth
+$route['user/signin'] = 'welcome/signin';
+$route['user/signup'] = 'welcome/signup';
+
+// author auth
+$route['author/signin'] = 'author/signin';
+$route['author/signup'] = 'author/signup';
+
+$route['training-manual'] = 'trainingmanual';
+$route['training-manual/preview'] = 'trainingmanual/preview';
+
+$route['templates'] = 'templates';
+$route['templates/preview'] = 'templates/preview';
+
+$route['music'] = 'music';
+$route['music/preview'] = 'music/preview';
+
+$route['stock-images'] = 'stockimages';
+$route['stock-images/preview'] = 'stockimages/preview';
+
+$route['illustration'] = 'illustration';
+$route['illustration/preview'] = 'illustration/preview';
+
+// payment
 $route['bayar'] = 'welcome/payment';
-$route['signin'] = 'frontend/b2c/login';
-$route['signup'] = 'welcome/signup';
-$route['templates'] = 'welcome/templates';
-$route['music'] = 'welcome/music';
-$route['stock-images'] = 'welcome/stockimages';
-$route['illustration'] = 'welcome/illustration';
-$route['training-manual'] = 'welcome/trainingmanual';
-
-

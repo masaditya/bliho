@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Welcome extends CI_Controller {
+class Author extends CI_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -27,21 +27,14 @@ class Welcome extends CI_Controller {
 	public function index()
 	{
 		$this->load->view('frontend/b2c/main/header');
-		$this->load->view('frontend/b2c/content/home');
+		$this->load->view('frontend/b2c/content/templates/catalog');
 		$this->load->view('frontend/b2c/main/footer');
 	}
-	public function payment(){
+
+	public function signin()
+	{
 		$this->load->view('frontend/b2c/main/header');
-		$this->load->view('payment');
-	}
-	public function signin(){
-		$this->load->view('frontend/b2c/main/header');
-		$this->load->view('frontend/b2c/content/content-signin');
-		$this->load->view('frontend/b2c/main/footer');
-	}
-	public function signup(){
-		$this->load->view('frontend/b2c/main/header');
-		$this->load->view('frontend/b2c/content/content-signup');
+		$this->load->view('frontend/b2c/content/content-login');
 		$this->load->view('frontend/b2c/main/footer');
 	}
 }

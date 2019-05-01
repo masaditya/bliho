@@ -124,7 +124,7 @@
                     <div id="items-row" class="col-lg-10">
                         <div class="item-row row">
                             <div class="col col-md-4">
-                                <a href="previewTM.html">
+                                <a href="<?=base_url() ?>index.php/training-manual/preview">
                                     <div class="card" style="width: 100%; border-radius: 5%;">
                                         <div class="card-img-top">
                                             <img src="<?=base_url() ?>assets/images/icon_bliho_inaktif_doc@3x.png"
@@ -148,7 +148,7 @@
                                 </a>
                             </div>
                             <div class="col col-md-4">
-                                <a href="previewTM.html">
+                                <a href="<?=base_url() ?>index.php/training-manual/preview"">
                                     <div class="card" style="width: 100%; border-radius: 5%;">
                                         <div class="card-img-top">
                                             <img src="<?=base_url() ?>assets/images/icon_bliho_inaktif_doc@3x.png"
@@ -172,7 +172,7 @@
                                 </a>
                             </div>
                             <div class="col col-md-4">
-                                <a href="previewTM.html">
+                                <a href="<?=base_url() ?>index.php/training-manual/preview"">
                                     <div class="card" style="width: 100%; border-radius: 5%;">
                                         <div class="card-img-top">
                                             <img src="<?=base_url() ?>assets/images/icon_bliho_inaktif_doc@3x.png"
@@ -198,7 +198,7 @@
                         </div>
                         <div class="item-row row">
                             <div class="col col-md-4">
-                                <a href="previewTM.html">
+                                <a href="<?=base_url() ?>index.php/training-manual/preview"">
                                     <div class="card" style="width: 100%; border-radius: 5%;">
                                         <div class="card-img-top">
                                             <img src="<?=base_url() ?>assets/images/icon_bliho_inaktif_doc@3x.png"
@@ -222,7 +222,7 @@
                                 </a>
                             </div>
                             <div class="col col-md-4">
-                                <a href="previewTM.html">
+                                <a href="<?=base_url() ?>index.php/training-manual/preview"">
                                     <div class="card" style="width: 100%; border-radius: 5%;">
                                         <div class="card-img-top">
                                             <img src="<?=base_url() ?>assets/images/icon_bliho_inaktif_doc@3x.png"
@@ -246,7 +246,7 @@
                                 </a>
                             </div>
                             <div class="col col-md-4">
-                                <a href="previewTM.html">
+                                <a href="<?=base_url() ?>index.php/training-manual/preview"">
                                     <div class="card" style="width: 100%; border-radius: 5%;">
                                         <div class="card-img-top">
                                             <img src="<?=base_url() ?>assets/images/icon_bliho_inaktif_doc@3x.png"

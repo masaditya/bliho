@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Stockimage extends CI_Controller {
+class Stockimages extends CI_Controller {
 
 	/**
 	 * Index Page for this controller.
