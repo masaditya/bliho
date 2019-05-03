@@ -54,7 +54,7 @@
                             <h4>Author Name</h4>
                             <p>View All Resource</p>
                         </div>
-                        <button> <span class="fas fa-user-plus"></span> Follow </button>
+                        <button class="follow-music"> <span class="fas fa-user-plus"></span> Follow </button>
                     </div>
 
                     <div class="table-description">
@@ -223,35 +223,66 @@
                 <!-- modal up here -->
             </div>
         </div>
-
-<div class="carousel-item active">
-                                                
-                                            </div>
-
         
         <div class="sec-2">
             <div class="row">
                 <div class="col-xl-8">
-
-                    <div class="multiple-items">
-<div class="carousel-item active">
-
-                        <div class="music-container row">
-                            <img class="music-icon" src="<?=base_url()?>/assets/images/temp/user.png" />
-                            <div class="carousel-music-info">
-                                <p>
-                                    Music Name
-                                    <br />
-                                    by Author Name
-                                </p>
+                    <h6 style="margin : 70px; margin-bottom: 50px;"> <strong> More From Author </strong> </h6>
+                    <div class="multiple-items-music">
+                        <div class="carousel-item ">
+                            <div class="music-container music-carousel row">
+                                <img class="music-icon" src="<?=base_url()?>/assets/images/temp/user.png" />
+                                <div class="carousel-music-info">
+                                    <p>
+                                        Music Name
+                                        <br />
+                                        by Author Name
+                                    </p>
+                                </div>
+                                <button class="button-play-cat" type="button"
+                                    id="btn-play"></button>
+                                <div class="audio-spectrum-car"></div>
+                                <p class="music-duration-car">03.00</p>
+                                <button class="btn-download-car fas fa-download"></button>
                             </div>
-                            <button class="button-play-cat" type="button"
-                                id="btn-play"></button>
-                            <div class="audio-spectrum-car"></div>
-                            <p class="music-duration-car">03.00</p>
-                            <button class="btn-download-car fas fa-download"></button>
                         </div>
-                                            </div>
+                        <div class="carousel-item ">
+                            <div class="music-container music-carousel row">
+                                <img class="music-icon" src="<?=base_url()?>/assets/images/temp/user.png" />
+                                <div class="carousel-music-info">
+                                    <p>
+                                        Music Name
+                                        <br />
+                                        by Author Name
+                                    </p>
+                                </div>
+                                <button class="button-play-cat" type="button"
+                                    id="btn-play"></button>
+                                <div class="audio-spectrum-car"></div>
+                                <p class="music-duration-car">03.00</p>
+                                <button class="btn-download-car fas fa-download"></button>
+                            </div>
+                        </div>
+                        <div class="carousel-item ">
+                            <div class="music-container music-carousel row">
+                                <img class="music-icon" src="<?=base_url()?>/assets/images/temp/user.png" />
+                                <div class="carousel-music-info">
+                                    <p>
+                                        Music Name
+                                        <br />
+                                        by Author Name
+                                    </p>
+                                </div>
+                                <button class="button-play-cat" type="button"
+                                    id="btn-play"></button>
+                                <div class="audio-spectrum-car"></div>
+                                <p class="music-duration-car">03.00</p>
+                                <button class="btn-download-car fas fa-download"></button>
+                            </div>
+                        </div>
+
+                        
+                        
 
 
                     </div>                
@@ -573,7 +604,7 @@
                 partialRender: true,
                 scrollParent: false,
                 fillParent: false,
-                minPxPerSec: 2.5
+                minPxPerSec: 3.5
             })
         }
         // var spectrumCatalog = WaveSurfer.create
@@ -645,6 +676,13 @@
         }
     </script>
        <script>
+
+           $(".follow-music").click(function () { 
+            var text = $('.follow-music').text();
+            console.log(text);
+            $(".follow-music").toggleClass("unfollow-music")
+            $(".follow-music").html(text == "Unfollow" ? '<span><i class="fas fa-user-plus"></i></span>Follow' : '<span><i class="fas fa-user-minus"></i></span>Unfollow')
+        })
         // let btnDownload = document.getElementById(btn - download);
         $(document).ready(function () {
             $('.variable-width').slick({
@@ -656,11 +694,7 @@
                 prevArrow: '<button type="button" class="slick-prev ">Previous</button>'
             });
 
-            $('.multiple-items').slick({
-                infinite: true,
-                slidesToShow: 2,
-                slidesToScroll: 2
-            });
+            $('.multiple-items-music').slick();
         })
     </script>
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>

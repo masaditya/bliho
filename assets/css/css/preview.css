@@ -105,23 +105,40 @@ p.small-paragraph {
 }
 
 .follow-button {
-	margin-top: 50px;
-	width: 10px;
-	height: 30%;
-	padding: 1.8em;
-	/* background-color: #f25456 */
+	width: 180px;
+	padding: 10px 30px;
+	background-color: #9ac221;
+	height: 50px;
+	font-weight: bold;
+	color: white;
+	margin-top: 75px;
+	margin-left: 40px;
+	border-radius: 10px;
 }
 
-.follow-button button {
-	width: 200px;
-	height: 50px;
-	color: white;
-	font-weight: bold;
-	border-radius: 10px;
-	box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.15);
-	background-image: linear-gradient(37deg, #9ac221, #cbf05c);
-	margin-top: 4%;
+.follow-button:hover {
+	background-color: white;
+	color: #9ac221;
 }
+
+.unfollow-button {
+	width: 180px;
+	padding: 10px 30px;
+	background-color: #f25456;
+	height: 50px;
+	font-weight: bold;
+	color: white;
+	margin-top: 75px;
+	margin-left: 40px;
+	border-radius: 10px;
+}
+
+.unfollow-button:hover {
+	background-color: white;
+	color: #f25456;
+}
+
+
 
 .tag-flex-container {
 	padding: 0;
@@ -387,4 +404,10 @@ button.btn-prev {
 	padding-left: 20px;
 	width: 80%;
 	margin: 30px auto;
+}
+
+.multiple-items-music {
+	padding-left: 20px;
+	width: 85%;
+	margin: 50px auto;
 }

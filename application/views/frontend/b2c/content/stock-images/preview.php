@@ -153,11 +153,9 @@
                                     </div>
                                 </div>
                             </div>
-                            <form action="categories.html" class="follow-button">
-                                <button class="btn" type="submit" value="Go to Google">
+                            <button class="btn follow-button" type="submit" value="Go to Google">
                                     <span><i class="fas fa-user-plus"></i></span> Follow
                                 </button>
-                            </form>
                         </div>
                         <h6 style="margin-left: 70px;"> <strong>Items Tag</strong> </h6>
                         <div class="tag-flex-container">
@@ -464,6 +462,13 @@
 
     <script>
         let star = document.querySelectorAll(".fa-star")
+
+        $(".follow-button").click(function () { 
+            var text = $('.follow-button').text();
+            console.log(text);
+            $(".follow-button").toggleClass("unfollow-button")
+            $(".follow-button").html(text == "Unfollow" ? '<span><i class="fas fa-user-plus"></i></span>Follow' : '<span><i class="fas fa-user-minus"></i></span>Unfollow')
+        })
 
         for (var i = 0; i < star.length; i++) {
             star[i].addEventListener(

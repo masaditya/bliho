@@ -47,8 +47,8 @@
                     href="<?= base_url()?>index.php/stock-images">Stock Images</a>
                 </li>
               </ul>
-              <form action="categories.html">
-                <button class="btn" type="submit" value="Go to Google">
+              <form action="#">
+                <button class="btn get-started-btn" type="submit" value="Go to Google">
                   Browse All Category
                 </button>
               </form>

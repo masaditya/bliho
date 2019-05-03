@@ -138,6 +138,7 @@ p {
 }
 
 .second-upper-left button {
+	cursor: pointer;
 	width: 30%;
 	height: 10%;
 	text-align: center;
@@ -682,4 +683,10 @@ footer .input-email {
 .get-started-btn {
 	padding: 7px;
 	border: none;
+}
+
+.get-started-btn:hover {
+	cursor: pointer;
+	background-color: #ffffff;
+	color: #f25456;
 }
