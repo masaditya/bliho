@@ -462,7 +462,10 @@
 
     <script>
         let star = document.querySelectorAll(".fa-star")
-
+        
+        $(".fa-bookmark").click(function () { 
+            $(".fa-bookmark").toggleClass("fas")
+         })
         $(".follow-button").click(function () { 
             var text = $('.follow-button').text();
             console.log(text);

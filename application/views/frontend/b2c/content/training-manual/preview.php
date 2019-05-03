@@ -534,6 +534,11 @@
         }
     </script>
     <script>
+
+        $(".fa-bookmark").click(function () { 
+            $(".fa-bookmark").toggleClass("fas")
+         })
+
         // let btnDownload = document.getElementById(btn - download);
         $(document).ready(function () {
             $('.variable-width').slick({

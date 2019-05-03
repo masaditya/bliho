@@ -676,7 +676,10 @@
         }
     </script>
        <script>
-
+           $(".fa-bookmark").click(function () { 
+            $(".fa-bookmark").toggleClass("fas")
+         })
+         
            $(".follow-music").click(function () { 
             var text = $('.follow-music').text();
             console.log(text);

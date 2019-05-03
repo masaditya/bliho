@@ -41,10 +41,11 @@
               <span id="symbol" class="fas fa-minus"></span> Show Filter
             </button>
           </div>
-          <div class="col col-md-6 right">
+          <div class="col col-md-6 ">
             <div class="dropdown">
-              <button class="btn dd-tgl" type="button" data-toggle="dropdown">Sort By Popular
-                <span class="fas fa-angle-down"></span></button>
+                <button class="dd-tgl" data-toggle="dropdown">
+               Sort by Popular <span class="fas fa-angle-down"></span>
+            </button>
               <ul class="dropdown-menu">
                 <li><a href="#">HTML</a></li>
                 <li><a href="#">CSS</a></li>
@@ -372,9 +373,13 @@
 
     let caret = document.querySelectorAll(".fa-angle-down");
 
+    $(".dd-tgl").click(function () { 
+      $(caret[0]).toggleClass('fa-angle-down fa-angle-up');;
+     })
+
     $('#dropdown-departement').on('click', function () {
       $('#filter-cb').toggle();
-      console.log(caret[0]);
+      console.log(caret[1]);
       $(caret[1]).toggleClass('fa-angle-down fa-angle-up');;
     })
 

@@ -527,6 +527,9 @@
         }
     </script>
     <script>
+        $(".fa-bookmark").click(function () { 
+            $(".fa-bookmark").toggleClass("fas")
+         })
 
         $(".follow-button").click(function () { 
             var text = $('.follow-button').text();
