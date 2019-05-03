@@ -106,7 +106,7 @@
           <div id="items-row" class="col-lg-10">
             <div class="item-row row">
               <div class="col col-md-4">
-                <a href="previewStockImage.html">
+                <a href=" <?=base_url() ?>index.php/stock-images/preview">
 
                   <div class="card" style="width: 100%; border-radius: 5%;">
                     <img class="card-img-top" src="<?=base_url() ?>assets/images/temp/1.png" alt="Card image cap" />
@@ -128,7 +128,7 @@
                 </a>
               </div>
               <div class="col col-md-4">
-                <a href="previewStockImage.html">
+                <a href=" <?=base_url() ?>index.php/stock-images/preview">
                   <div class="card" style="width: 100%; border-radius: 5%;">
                     <img class="card-img-top" src="<?=base_url() ?>assets/images/temp/2.png" alt="Card image cap" />
                     <div class="card-body">

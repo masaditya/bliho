@@ -599,11 +599,27 @@ footer .input-email {
 	width: 100%;
 	height: 15vw;
 	vertical-align: middle;
-
 	object-fit: cover;
 }
 
 .card-img-top img {
+	margin: auto;
+	padding-top: 15%;
+	width: 70px;
+	height: auto;
+	text-align: center;
+}
+
+.card-doc-top {
+	background-color: rgb(192, 192, 192);
+	text-align: center;
+	width: 100%;
+	height: 15vw;
+	vertical-align: middle;
+	object-fit: cover;
+}
+
+.card-doc-top img {
 	margin-top: 15%;
 	width: 70px;
 	height: auto;

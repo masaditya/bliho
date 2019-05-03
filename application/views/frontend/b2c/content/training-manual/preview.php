@@ -3,8 +3,6 @@
 
 <head>
     <!-- Font Awesome -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
     <!-- Bootstrap core CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
@@ -30,6 +28,9 @@
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+
+     <link rel="stylesheet" type="text/css" href="<?=base_url()?>assets/css/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="<?=base_url()?>assets/css/slick/slick-theme.css" />
 </head>
 
 <body>
@@ -44,16 +45,14 @@
                 <div class="col-md-6 upper-left">
                     <div class="card big-card">
                         <div class="card-img-top">
-                            <img id="pdfpreview" src="<?=base_url() ?>assets/images/icon_bliho_inaktif_doc@3x.png"
-                                href="../../doc/MongoDBNotesForProfessionals.pdf" />
+                            <img src="<?=base_url()?>assets/images/icon_bliho_inaktif_doc@3x.png" alt="Card image cap" />
                         </div>
                         <div class="card-body">
-
-                            <!-- <img href="../../doc/MongoDBNotesForProfessionals.pdf"> -->
-                            <button href="../../doc/MongoDBNotesForProfessionals.pdf" id="previewbtn">
-                                Preview
-                            </button>
-
+                            <a href="../../doc/MongoDBNotesForProfessionals.pdf" target="_blank">
+                                <button>
+                                    Preview
+                                </button>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -153,7 +152,7 @@
                             <div class="minicontainer">
                                 <div class="row">
                                     <div class="col-xs-6">
-                                        <img class="miniavatar" src="<?=base_url() ?>assets/images/temp/user.png" alt="">
+                                        <img class="miniavatar" src="<?=base_url()?>assets/images/temp/user.png" alt="">
                                     </div>
                                     <div class="col-xs-6">
                                         <h6> <strong>Author Name</strong> </h6>
@@ -222,151 +221,108 @@
                 <div class="col-xl-8">
                     <div class="container-fluid sec-2-left">
                         <h6> <strong> New From Author </strong> </h6>
-                        <div class="container-fluid carousel-left">
-                            <div class="row">
-                                <div class="col-sm-12">
-                                    <div id="up" class="carousel slide" data-ride="carousel">
-                                        <div class="carousel-inner">
-                                            <!-- card down here -->
+                        
+                        <div class="multiple-items">
 
-                                            <!-- active carousel here -->
-                                            <div class="carousel-item active">
-                                                <div class="container-fluid">
-                                                    <div class="row">
-                                                        <div class="col-md-5" style="margin-left:9%;">
-                                                            <div class="card" style="width: 100%; border-radius: 5%;">
-                                                                <div class="card-img-top">
-                                                                    <img src="<?=base_url() ?>assets/images/icon_bliho_inaktif_doc@3x.png"
-                                                                        alt="Card image cap" />
-                                                                </div>
-                                                                <div class="card-body">
-                                                                    <div class="row">
-                                                                        <div class="item col col-md-7 ">
-                                                                            <p class="item-name">Training Manual -
-                                                                                Template</p>
-                                                                            <a href="google.com">
-                                                                                <p class="item-author">by Author Name
-                                                                                </p>
-                                                                            </a>
-                                                                        </div>
-                                                                        <div class="item col col-md-3">
-                                                                            <p class="item-type-name">Ai,PNG</p>
-                                                                        </div>
-                                                                        <div class="item download" class="col col-md-2">
-                                                                            <i class="fas fa-arrow-down"></i>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-lg-5 ">
-                                                            <div class="card">
-                                                                <div class="card-img-top">
-                                                                    <img src="<?=base_url() ?>assets/images/icon_bliho_inaktif_doc@3x.png"
-                                                                        alt="Card image cap" />
-                                                                </div>
-                                                                <div class="card-body">
-                                                                    <div class="row">
-                                                                        <div class="item col col-md-7 ">
-                                                                            <p class="item-name">Training Manual -
-                                                                                Template</p>
-                                                                            <a href="google.com">
-                                                                                <p class="item-author">by Author Name
-                                                                                </p>
-                                                                            </a>
-                                                                        </div>
-                                                                        <div class="item col col-md-3">
-                                                                            <p class="item-type-name">Ai,PNG</p>
-                                                                        </div>
-                                                                        <div class="item download" class="col col-md-2">
-                                                                            <i class="fas fa-arrow-down"></i>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- carousel unactive here -->
-
-                                            <div class="carousel-item ">
-                                                <div class="container-fluid">
-                                                    <div class="row">
-                                                        <div class="col-md-5" style="margin-left:9%;">
-                                                            <div class="card" style="width: 100%; border-radius: 5%;">
-                                                                <div class="card-img-top">
-                                                                    <img src="<?=base_url() ?>assets/images/icon_bliho_inaktif_doc@3x.png"
-                                                                        alt="Card image cap" />
-                                                                </div>
-                                                                <div class="card-body">
-                                                                    <div class="row">
-                                                                        <div class="item col col-md-7 ">
-                                                                            <p class="item-name">Training Manual -
-                                                                                Template</p>
-                                                                            <a href="google.com">
-                                                                                <p class="item-author">by Author Name
-                                                                                </p>
-                                                                            </a>
-                                                                        </div>
-                                                                        <div class="item col col-md-3">
-                                                                            <p class="item-type-name">Ai,PNG</p>
-                                                                        </div>
-                                                                        <div class="item download" class="col col-md-2">
-                                                                            <i class="fas fa-arrow-down"></i>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-lg-5 ">
-                                                            <div class="card">
-                                                                <div class="card-img-top">
-                                                                    <img src="<?=base_url() ?>assets/images/icon_bliho_inaktif_doc@3x.png"
-                                                                        alt="Card image cap" />
-                                                                </div>
-                                                                <div class="card-body">
-                                                                    <div class="row">
-                                                                        <div class="item col col-md-7 ">
-                                                                            <p class="item-name">Training Manual -
-                                                                                Template</p>
-                                                                            <a href="google.com">
-                                                                                <p class="item-author">by Author Name
-                                                                                </p>
-                                                                            </a>
-                                                                        </div>
-                                                                        <div class="item col col-md-3">
-                                                                            <p class="item-type-name">Ai,PNG</p>
-                                                                        </div>
-                                                                        <div class="item download" class="col col-md-2">
-                                                                            <i class="fas fa-arrow-down"></i>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-
-
-                                            <!-- card up here -->
-
+                        <div class="col-lg-12">
+                            <div class="card">
+                                <div class="card-img-top">
+                                    <img src="<?=base_url() ?>assets/images/icon_bliho_inaktif_doc@3x.png"
+                                        alt="Card image cap" />
+                                </div>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class=" card-text item col col-md-7 ">
+                                            <p class="item-name">Illustration Name -
+                                                Vector</p>
+                                            <p class="item-author">by Author Name</p>
                                         </div>
-
-                                        <a href="#up" class="carousel-control-prev" data-slide="prev">
-                                            <span class="carousel-control-prev-icon">
-                                            </span>
-                                        </a>
-                                        <a href="#up" class="carousel-control-next" data-slide="next">
-                                            <span class="carousel-control-next-icon">
-                                            </span>
-                                        </a>
+                                        <div class="item col col-md-3">
+                                            <p class="item-type-name">Ai,PNG</p>
+                                        </div>
+                                        <div class="item download col col-md-2">
+                                            <i class="fas fa-arrow-down"></i>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <div class="col-lg-12">
+                            <div class="card">
+                                <div class="card-img-top">
+                                    <img src="<?=base_url() ?>assets/images/icon_bliho_inaktif_doc@3x.png"
+                                        alt="Card image cap" />
+                                </div>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class=" card-text item col col-md-7 ">
+                                            <p class="item-name">Illustration Name -
+                                                Vector</p>
+                                            <p class="item-author">by Author Name</p>
+                                        </div>
+                                        <div class="item col col-md-3">
+                                            <p class="item-type-name">Ai,PNG</p>
+                                        </div>
+                                        <div class="item download col col-md-2">
+                                            <i class="fas fa-arrow-down"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-12">
+                            <div class="card">
+                                <div class="card-img-top">
+                                    <img src="<?=base_url() ?>assets/images/icon_bliho_inaktif_doc@3x.png"
+                                        alt="Card image cap" />
+                                </div>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class=" card-text item col col-md-7 ">
+                                            <p class="item-name">Illustration Name -
+                                                Vector</p>
+                                            <p class="item-author">by Author Name</p>
+                                        </div>
+                                        <div class="item col col-md-3">
+                                            <p class="item-type-name">Ai,PNG</p>
+                                        </div>
+                                        <div class="item download col col-md-2">
+                                            <i class="fas fa-arrow-down"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-12">
+                            <div class="card">
+                                <div class="card-img-top">
+                                    <img src="<?=base_url() ?>assets/images/icon_bliho_inaktif_doc@3x.png"
+                                        alt="Card image cap" />
+                                </div>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class=" card-text item col col-md-7 ">
+                                            <p class="item-name">Illustration Name -
+                                                Vector</p>
+                                            <p class="item-author">by Author Name</p>
+                                        </div>
+                                        <div class="item col col-md-3">
+                                            <p class="item-type-name">Ai,PNG</p>
+                                        </div>
+                                        <div class="item download col col-md-2">
+                                            <i class="fas fa-arrow-down"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
                     </div>
                 </div>
                 <div class="col-md-4 float-card">
@@ -384,188 +340,144 @@
 
             <div class="container-fluid sec-2-left">
                 <h6> <strong> Similar Graphics </strong> </h6>
-                <div class="container-fluid carousel-left">
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <div id="down" class="carousel slide" data-ride="carousel">
-                                <div class="carousel-inner">
-                                    <!-- card down here -->
+                <div class="variable-width">
 
-                                    <!-- active carousel here -->
-                                    <div class="carousel-item active">
-                                        <div class="container-fluid">
-                                            <div class="row">
-
-                                                <div class="col-lg-3" style="margin-left: 9%;">
-                                                    <div class="card">
-                                                        <div class="card-img-top">
-                                                            <img src="<?=base_url() ?>assets/images/icon_bliho_inaktif_doc@3x.png"
-                                                                alt="Card image cap" />
-                                                        </div>
-                                                        <div class="card-body">
-                                                            <div class="row">
-                                                                <div class=" card-text item col col-md-7 ">
-                                                                    <p class="item-name">Illustration Name -
-                                                                        Vector</p>
-                                                                    <p class="item-author">by Author Name</p>
-                                                                </div>
-                                                                <div class="item col col-md-3">
-                                                                    <p class="item-type-name">Ai,PNG</p>
-                                                                </div>
-                                                                <div class="item download col col-md-2">
-                                                                    <i class="fas fa-arrow-down"></i>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="col-lg-3">
-                                                    <div class="card">
-                                                        <div class="card-img-top">
-                                                            <img src="<?=base_url() ?>assets/images/icon_bliho_inaktif_doc@3x.png"
-                                                                alt="Card image cap" />
-                                                        </div>
-                                                        <div class="card-body">
-                                                            <div class="row">
-                                                                <div class=" card-text item col col-md-7 ">
-                                                                    <p class="item-name">Illustration Name -
-                                                                        Vector</p>
-                                                                    <p class="item-author">by Author Name</p>
-                                                                </div>
-                                                                <div class="item col col-md-3">
-                                                                    <p class="item-type-name">Ai,PNG</p>
-                                                                </div>
-                                                                <div class="item download col col-md-2">
-                                                                    <i class="fas fa-arrow-down"></i>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-3">
-                                                    <div class="card">
-                                                        <div class="card-img-top">
-                                                            <img src="<?=base_url() ?>assets/images/icon_bliho_inaktif_doc@3x.png"
-                                                                alt="Card image cap" />
-                                                        </div>
-                                                        <div class="card-body">
-                                                            <div class="row">
-                                                                <div class=" card-text item col col-md-7 ">
-                                                                    <p class="item-name">Illustration Name -
-                                                                        Vector</p>
-                                                                    <p class="item-author">by Author Name</p>
-                                                                </div>
-                                                                <div class="item col col-md-3">
-                                                                    <p class="item-type-name">Ai,PNG</p>
-                                                                </div>
-                                                                <div class="item download col col-md-2">
-                                                                    <i class="fas fa-arrow-down"></i>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                            </div>
+                            <div class="card">
+                                <div class="card-img-top">
+                                    <img src="<?=base_url() ?>assets/images/icon_bliho_inaktif_doc@3x.png"
+                                        alt="Card image cap" />
+                                </div>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class=" card-text item col col-md-7 ">
+                                            <p class="item-name">Illustration Name -
+                                                Vector</p>
+                                            <p class="item-author">by Author Name</p>
                                         </div>
-                                    </div>
-                                    <!-- carousel unactive here -->
-
-                                    <div class="carousel-item ">
-                                        <div class="container-fluid">
-                                            <div class="row">
-
-                                                <div class="col-lg-3" style="margin-left: 9%;">
-                                                    <div class="card">
-                                                        <div class="card-img-top">
-                                                            <img src="<?=base_url() ?>assets/images/icon_bliho_inaktif_doc@3x.png"
-                                                                alt="Card image cap" />
-                                                        </div>
-                                                        <div class="card-body">
-                                                            <div class="row">
-                                                                <div class=" card-text item col col-md-7 ">
-                                                                    <p class="item-name">Illustration Name -
-                                                                        Vector</p>
-                                                                    <p class="item-author">by Author Name</p>
-                                                                </div>
-                                                                <div class="item col col-md-3">
-                                                                    <p class="item-type-name">Ai,PNG</p>
-                                                                </div>
-                                                                <div class="item download col col-md-2">
-                                                                    <i class="fas fa-arrow-down"></i>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="col-lg-3">
-                                                    <div class="card">
-                                                        <div class="card-img-top">
-                                                            <img src="<?=base_url() ?>assets/images/icon_bliho_inaktif_doc@3x.png"
-                                                                alt="Card image cap" />
-                                                        </div>
-                                                        <div class="card-body">
-                                                            <div class="row">
-                                                                <div class=" card-text item col col-md-7 ">
-                                                                    <p class="item-name">Illustration Name -
-                                                                        Vector</p>
-                                                                    <p class="item-author">by Author Name</p>
-                                                                </div>
-                                                                <div class="item col col-md-3">
-                                                                    <p class="item-type-name">Ai,PNG</p>
-                                                                </div>
-                                                                <div class="item download col col-md-2">
-                                                                    <i class="fas fa-arrow-down"></i>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-3">
-                                                    <div class="card">
-                                                        <div class="card-img-top">
-                                                            <img src="<?=base_url() ?>assets/images/icon_bliho_inaktif_doc@3x.png"
-                                                                alt="Card image cap" />
-                                                        </div>
-                                                        <div class="card-body">
-                                                            <div class="row">
-                                                                <div class=" card-text item col col-md-7 ">
-                                                                    <p class="item-name">Illustration Name -
-                                                                        Vector</p>
-                                                                    <p class="item-author">by Author Name</p>
-                                                                </div>
-                                                                <div class="item col col-md-3">
-                                                                    <p class="item-type-name">Ai,PNG</p>
-                                                                </div>
-                                                                <div class="item download col col-md-2">
-                                                                    <i class="fas fa-arrow-down"></i>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                        <div class="item col col-md-3">
+                                            <p class="item-type-name">Ai,PNG</p>
+                                        </div>
+                                        <div class="item download col col-md-2">
+                                            <i class="fas fa-arrow-down"></i>
                                         </div>
                                     </div>
                                 </div>
-                                <a href="#down" class="carousel-control-prev" data-slide="prev">
-                                    <span class="carousel-control-prev-icon">
-                                    </span>
-                                </a>
-                                <a href="#down" class="carousel-control-next" data-slide="next">
-                                    <span class="carousel-control-next-icon">
-                                    </span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+                            </div> 
+                            
+                            <div class="card">
+                                <div class="card-img-top">
+                                    <img src="<?=base_url() ?>assets/images/icon_bliho_inaktif_doc@3x.png"
+                                        alt="Card image cap" />
+                                </div>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class=" card-text item col col-md-7 ">
+                                            <p class="item-name">Illustration Name -
+                                                Vector</p>
+                                            <p class="item-author">by Author Name</p>
+                                        </div>
+                                        <div class="item col col-md-3">
+                                            <p class="item-type-name">Ai,PNG</p>
+                                        </div>
+                                        <div class="item download col col-md-2">
+                                            <i class="fas fa-arrow-down"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+
+                            <div class="card">
+                                <div class="card-img-top">
+                                    <img src="<?=base_url() ?>assets/images/icon_bliho_inaktif_doc@3x.png"
+                                        alt="Card image cap" />
+                                </div>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class=" card-text item col col-md-7 ">
+                                            <p class="item-name">Illustration Name -
+                                                Vector</p>
+                                            <p class="item-author">by Author Name</p>
+                                        </div>
+                                        <div class="item col col-md-3">
+                                            <p class="item-type-name">Ai,PNG</p>
+                                        </div>
+                                        <div class="item download col col-md-2">
+                                            <i class="fas fa-arrow-down"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+
+                            <div class="card">
+                                <div class="card-img-top">
+                                    <img src="<?=base_url() ?>assets/images/icon_bliho_inaktif_doc@3x.png"
+                                        alt="Card image cap" />
+                                </div>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class=" card-text item col col-md-7 ">
+                                            <p class="item-name">Illustration Name -
+                                                Vector</p>
+                                            <p class="item-author">by Author Name</p>
+                                        </div>
+                                        <div class="item col col-md-3">
+                                            <p class="item-type-name">Ai,PNG</p>
+                                        </div>
+                                        <div class="item download col col-md-2">
+                                            <i class="fas fa-arrow-down"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+
+                            <div class="card">
+                                <div class="card-img-top">
+                                    <img src="<?=base_url() ?>assets/images/icon_bliho_inaktif_doc@3x.png"
+                                        alt="Card image cap" />
+                                </div>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class=" card-text item col col-md-7 ">
+                                            <p class="item-name">Illustration Name -
+                                                Vector</p>
+                                            <p class="item-author">by Author Name</p>
+                                        </div>
+                                        <div class="item col col-md-3">
+                                            <p class="item-type-name">Ai,PNG</p>
+                                        </div>
+                                        <div class="item download col col-md-2">
+                                            <i class="fas fa-arrow-down"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+
+                            <div class="card">
+                                <div class="card-img-top">
+                                    <img src="<?=base_url() ?>assets/images/icon_bliho_inaktif_doc@3x.png"
+                                        alt="Card image cap" />
+                                </div>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class=" card-text item col col-md-7 ">
+                                            <p class="item-name">Illustration Name -
+                                                Vector</p>
+                                            <p class="item-author">by Author Name</p>
+                                        </div>
+                                        <div class="item col col-md-3">
+                                            <p class="item-type-name">Ai,PNG</p>
+                                        </div>
+                                        <div class="item download col col-md-2">
+                                            <i class="fas fa-arrow-down"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
                 </div>
             </div>
         </div>
     </div>
-    <div data-include="footer"></div>
+    
 
     <script>
         window.onscroll = function () {
@@ -616,33 +528,35 @@
             );
         }
     </script>
-
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <!-- Bootstrap tooltips -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js">
-    </script>
-    <!-- Bootstrap core JavaScript -->
-    <script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js">
-    </script>
-    <!-- MDB core JavaScript -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.4/js/mdb.min.js">
-    </script>
-    <script src="../../js/EZView.js"></script>
-    <script src="../../js/draggable.js"></script>
     <script>
         // let btnDownload = document.getElementById(btn - download);
-        // let btnpreview = document.getElementById("previewbtn");
+        $(document).ready(function () {
+            $('.variable-width').slick({
+                dots: true,
+                infinite: true,
+                speed: 300,
+                slidesToShow: 5,
+                variableWidth: true,
+                prevArrow: '<button type="button" class="slick-prev ">Previous</button>'
+            });
 
-        $('#previewbtn').EZView();
-
-        // $(btnpreview).click(function () {
-        //     $('#pdfpreview').EZView();
-        // })
+            $('.multiple-items').slick({
+                infinite: true,
+                slidesToShow: 2,
+                slidesToScroll: 2
+            });
+        })
     </script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="<?=base_url()?>assets/css/slick/slick.min.js"></script>
+
+    
+<!-- 
+    <script>
+        let btnDownload = document.getElementById(btn - download);
+    </script> -->
 
 
 </body>
 
-
-</html>

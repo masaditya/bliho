@@ -1,5 +1,3 @@
-<!DOCTYPE html>
-<html>
 
 <head>
     <!-- Font Awesome -->
@@ -13,8 +11,8 @@
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="<?=base_url() ?>assets/css/css/style.css">
-    <link rel="stylesheet" href="<?=base_url() ?>assets/css/css/preview.css">
+    <link rel="stylesheet" href="<?=base_url()?>assets/css/css/style.css">
+    <link rel="stylesheet" href="<?=base_url()?>assets/css/css/preview.css">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
     </script>
@@ -24,17 +22,15 @@
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
-    <script src="js/loader.js"></script>
-    <script src="js/EZView.js"></script>
+    <!-- <script src="js/loader.js"></script>
+    <script src="js/EZView.js"></script> -->
     <!-- slick -->
-    <link rel="stylesheet" type="text/css" href="js/slick/slick.css" />
-    <link rel="stylesheet" type="text/css" href="js/slick/slick-theme.css" />
+    <link rel="stylesheet" type="text/css" href="<?=base_url()?>assets/css/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="<?=base_url()?>assets/css/slick/slick-theme.css" />
 </head>
 
 <body>
     <div class="video">
-        <div data-include="header"></div>
-
 
         <div class="container-fluid content sec-1">
             <div class="col-xl-12 title-container">
@@ -44,7 +40,7 @@
             </div>
             <div class="row top-padding">
                 <div class="col-md-6 upper-left">
-                    <img id="sec1-image" src="images/Group 10989@3x.png" alt="">
+                    <img id="sec1-image" src="<?=base_url()?>assets/images/Group 10989@3x.png" alt="">
                 </div>
                 <div class="col-md-6 sec-1-right">
                     <h2>Love this item?</h2>
@@ -149,7 +145,7 @@
                             <div class="minicontainer">
                                 <div class="row">
                                     <div class="col-xs-6">
-                                        <img class="miniavatar" src="images/temp/user.png" alt="">
+                                        <img class="miniavatar" src="<?=base_url()?>assets/images/temp/user.png" alt="">
                                     </div>
                                     <div class="col-xs-6">
                                         <h6> <strong>Author Name</strong> </h6>
@@ -216,11 +212,93 @@
             <div class="row">
                 <div class="col-xl-8">
                     <div class="multiple-items">
-                        <div data-include="card-image"></div>
-                        <div data-include="card-image"></div>
-                        <div data-include="card-image"></div>
-                        <div data-include="card-image"></div>
+
+                        <div class="col-lg-12">
+                            <div class="card">
+                                <img class="card-img-top" src="<?=base_url()?>assets/images/temp/1.png" alt="Card image cap" />
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class=" card-text item col col-md-7 ">
+                                            <p class="item-name">Illustration Name -
+                                                Vector</p>
+                                            <p class="item-author">by Author Name</p>
+                                        </div>
+                                        <div class="item col col-md-3">
+                                            <p class="item-type-name">Ai,PNG</p>
+                                        </div>
+                                        <div class="item download col col-md-2">
+                                            <i class="fas fa-arrow-down"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-12">
+                            <div class="card">
+                                <img class="card-img-top" src="<?=base_url()?>assets/images/temp/1.png" alt="Card image cap" />
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class=" card-text item col col-md-7 ">
+                                            <p class="item-name">Illustration Name -
+                                                Vector</p>
+                                            <p class="item-author">by Author Name</p>
+                                        </div>
+                                        <div class="item col col-md-3">
+                                            <p class="item-type-name">Ai,PNG</p>
+                                        </div>
+                                        <div class="item download col col-md-2">
+                                            <i class="fas fa-arrow-down"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-12">
+                            <div class="card">
+                                <img class="card-img-top" src="<?=base_url()?>assets/images/temp/1.png" alt="Card image cap" />
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class=" card-text item col col-md-7 ">
+                                            <p class="item-name">Illustration Name -
+                                                Vector</p>
+                                            <p class="item-author">by Author Name</p>
+                                        </div>
+                                        <div class="item col col-md-3">
+                                            <p class="item-type-name">Ai,PNG</p>
+                                        </div>
+                                        <div class="item download col col-md-2">
+                                            <i class="fas fa-arrow-down"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-12">
+                            <div class="card">
+                                <img class="card-img-top" src="<?=base_url()?>assets/images/temp/1.png" alt="Card image cap" />
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class=" card-text item col col-md-7 ">
+                                            <p class="item-name">Illustration Name -
+                                                Vector</p>
+                                            <p class="item-author">by Author Name</p>
+                                        </div>
+                                        <div class="item col col-md-3">
+                                            <p class="item-type-name">Ai,PNG</p>
+                                        </div>
+                                        <div class="item download col col-md-2">
+                                            <i class="fas fa-arrow-down"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
+                    
                 </div>
                 <div class="col-md-4 float-card">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum laborum, quod recusandae sit eos
@@ -237,23 +315,125 @@
 
             <div class="container-fluid sec-2-left">
                 <h6> <strong> Similar Graphics </strong> </h6>
-                <div class="col-sm-12">
-                    <div class="variable-width">
-                        <div data-include="card-image"></div>
-                        <div data-include="card-image"></div>
-                        <div data-include="card-image"></div>
-                        <div data-include="card-image"></div>
-                        <div data-include="card-image"></div>
-                        <div data-include="card-image"></div>
-                        <div data-include="card-image"></div>
-                        <div data-include="card-image"></div>
-                        <div data-include="card-image"></div>
-                    </div>
+                <div class="variable-width">
+                        
+                            <div class="card slick-down">
+                                <img class="card-img-top" src="<?=base_url()?>assets/images/temp/1.png" alt="Card image cap" />
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class=" card-text item col col-md-7 ">
+                                            <p class="item-name">Illustration Name -
+                                                Vector</p>
+                                            <p class="item-author">by Author Name</p>
+                                        </div>
+                                        <div class="item col col-md-3">
+                                            <p class="item-type-name">Ai,PNG</p>
+                                        </div>
+                                        <div class="item download col col-md-2">
+                                            <i class="fas fa-arrow-down"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <img class="card-img-top" src="<?=base_url()?>assets/images/temp/1.png" alt="Card image cap" />
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class=" card-text item col col-md-7 ">
+                                            <p class="item-name">Illustration Name -
+                                                Vector</p>
+                                            <p class="item-author">by Author Name</p>
+                                        </div>
+                                        <div class="item col col-md-3">
+                                            <p class="item-type-name">Ai,PNG</p>
+                                        </div>
+                                        <div class="item download col col-md-2">
+                                            <i class="fas fa-arrow-down"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                             <div class="card">
+                                <img class="card-img-top" src="<?=base_url()?>assets/images/temp/1.png" alt="Card image cap" />
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class=" card-text item col col-md-7 ">
+                                            <p class="item-name">Illustration Name -
+                                                Vector</p>
+                                            <p class="item-author">by Author Name</p>
+                                        </div>
+                                        <div class="item col col-md-3">
+                                            <p class="item-type-name">Ai,PNG</p>
+                                        </div>
+                                        <div class="item download col col-md-2">
+                                            <i class="fas fa-arrow-down"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <img class="card-img-top" src="<?=base_url()?>assets/images/temp/1.png" alt="Card image cap" />
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class=" card-text item col col-md-7 ">
+                                            <p class="item-name">Illustration Name -
+                                                Vector</p>
+                                            <p class="item-author">by Author Name</p>
+                                        </div>
+                                        <div class="item col col-md-3">
+                                            <p class="item-type-name">Ai,PNG</p>
+                                        </div>
+                                        <div class="item download col col-md-2">
+                                            <i class="fas fa-arrow-down"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                             <div class="card">
+                                <img class="card-img-top" src="<?=base_url()?>assets/images/temp/1.png" alt="Card image cap" />
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class=" card-text item col col-md-7 ">
+                                            <p class="item-name">Illustration Name -
+                                                Vector</p>
+                                            <p class="item-author">by Author Name</p>
+                                        </div>
+                                        <div class="item col col-md-3">
+                                            <p class="item-type-name">Ai,PNG</p>
+                                        </div>
+                                        <div class="item download col col-md-2">
+                                            <i class="fas fa-arrow-down"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <img class="card-img-top" src="<?=base_url()?>assets/images/temp/1.png" alt="Card image cap" />
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class=" card-text item col col-md-7 ">
+                                            <p class="item-name">Illustration Name -
+                                                Vector</p>
+                                            <p class="item-author">by Author Name</p>
+                                        </div>
+                                        <div class="item col col-md-3">
+                                            <p class="item-type-name">Ai,PNG</p>
+                                        </div>
+                                        <div class="item download col col-md-2">
+                                            <i class="fas fa-arrow-down"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                 </div>
             </div>
         </div>
     </div>
-    <div data-include="footer"></div>
 
     <script>
         window.onscroll = function () {
@@ -325,9 +505,6 @@
     </script>
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="js/slick/slick.min.js"></script>
+    <script type="text/javascript" src="<?=base_url()?>assets/css/slick/slick.min.js"></script>
 
 </body>
-
-
-</html>

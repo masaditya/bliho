@@ -1,5 +1,3 @@
-<!DOCTYPE html>
-<html>
 
 <head>
     <!-- Font Awesome -->
@@ -23,44 +21,17 @@
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    <!-- <script src="https://stackpath.bootstr apcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-    </script>
+    </script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+    <link rel="stylesheet" type="text/css" href="<?=base_url()?>assets/css/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="<?=base_url()?>assets/css/slick/slick-theme.css" />
 </head>
 
 <body>
     <div class="video">
-        <nav id="navbar" class="navbar navbar-default navbar-expand-lg navbar-light">
-            <a class="navbar-brand brand-text" href="/index.html"><img src="../../images/temp/logo.png" /></a>
-            <div class="searchContainer">
-                <i class="fa fa-search searchIcon"></i>
-                <input class="searchBox" type="search" name="search" placeholder="Search" />
-            </div>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto ">
-                    <li class="nav-item nav-button">
-                        <a class="nav-link nav-button-text" href="/preview.html">About</a>
-                    </li>
-                    <li class="nav-item nav-button">
-                        <a class="nav-link nav-button-text" href="#">License</a>
-                    </li>
-                    <li class="nav-item nav-button">
-                        <a class="nav-link nav-button-text" href="#">Pricing</a>
-                    </li>
-                    <li class="nav-item nav-button">
-                        <a class="nav-link nav-button-text" href="#">Create Account</a>
-                    </li>
-                    <li class="nav-item nav-button">
-                        <button class="btn sign-in sign-in-text my-2 my-sm-0" style="width:100px;">
-                            Sign In
-                            <i class="fas fa-sign-in-alt" style="margin-left:15%;"></i>
-                        </button>
-                    </li>
-                </ul>
-            </div>
-        </nav>
         <div class="container-fluid content sec-1">
             <div class="col-xl-12 title-container">
                 <h4> <strong> Title Item </strong> </h4>
@@ -78,7 +49,7 @@
                         <button>Download Preview <span class="fas fa-download"></span></button>
                     </div>
                     <div class="row user">
-                        <img src="../../images/temp/user.png" alt="">
+                        <img src="<?=base_url()?>/assets/images/temp/user.png" alt="">
                         <div class="card-author">
                             <h4>Author Name</h4>
                             <p>View All Resource</p>
@@ -185,8 +156,8 @@
                                 <div class="row" style="margin-top:20px;">
                                     <div class="col-xl-6">
                                         <div style="text-align : center;">
-                                            <a style="text-decoration:none;" href="./../../images/Group 10684@3x.png"
-                                                download="./../../images/Group 10684@3x.png">
+                                            <a style="text-decoration:none;" href="<?=base_url()?>/assets/images/Group 10684@3x.png"
+                                                download="<?=base_url()?>/assets/images/Group 10684@3x.png">
                                                 <button id="modal-btn-premium">
                                                     Premium
                                                 </button>
@@ -200,8 +171,8 @@
 
                                     <div class="col-xl-6">
                                         <div class="modal-right">
-                                            <a style="text-decoration:none;" href="./../../images/Group 10684@3x.png"
-                                                download="./../../images/Group 10684@3x.png">
+                                            <a style="text-decoration:none;" href="<?=base_url()?>/assets/images/Group 10684@3x.png"
+                                                download="<?=base_url()?>/assets/images/Group 10684@3x.png">
                                                 <button id="modal-btn-free">
                                                     Free
                                                 </button>
@@ -252,76 +223,39 @@
                 <!-- modal up here -->
             </div>
         </div>
+
+<div class="carousel-item active">
+                                                
+                                            </div>
+
+        
         <div class="sec-2">
             <div class="row">
                 <div class="col-xl-8">
-                    <div class="container-fluid section-2-left">
-                        <h6> <strong> New From Author </strong> </h6>
-                        <div class="container-fluid music-carousel">
-                            <div class="row">
-                                <div class="col-sm-12">
-                                    <div id="up" class="carousel slide" data-ride="carousel">
-                                        <div class="carousel-inner music-padding">
-                                            <!-- card down here -->
 
-                                            <!-- active carousel here -->
-                                            <div class="carousel-item active">
-                                                <div class="music-container row">
-                                                    <img class="music-icon" src="../../images/temp/user.png" />
-                                                    <div class="carousel-music-info">
-                                                        <p>
-                                                            Music Name
-                                                            <br />
-                                                            by Author Name
-                                                        </p>
-                                                    </div>
-                                                    <button class="button-play-cat" type="button"
-                                                        id="btn-play"></button>
-                                                    <div class="audio-spectrum-car"></div>
-                                                    <p class="music-duration-car">03.00</p>
-                                                    <button class="btn-download-car fas fa-download"></button>
-                                                </div>
-                                            </div>
-                                            <!-- carousel unactive here -->
+                    <div class="multiple-items">
+<div class="carousel-item active">
 
-                                            <div class="carousel-item ">
-                                                <div class="music-container row">
-                                                    <img class="music-icon" src="../../images/temp/user.png" />
-                                                    <div class="carousel-music-info">
-                                                        <p>
-                                                            Music Name
-                                                            <br />
-                                                            by Author Name
-                                                        </p>
-                                                    </div>
-                                                    <button class="button-play-cat" type="button"
-                                                        id="btn-play"></button>
-                                                    <div class="audio-spectrum-car"></div>
-                                                    <p class="music-duration-car">03.00</p>
-                                                    <button class="btn-download-car fas fa-download"></button>
-                                                </div>
-
-                                            </div>
-
-
-
-                                            <!-- card up here -->
-
-                                        </div>
-
-                                        <a href="#up" class="carousel-control-prev" data-slide="prev">
-                                            <span class="carousel-control-prev-icon">
-                                            </span>
-                                        </a>
-                                        <a href="#up" class="carousel-control-next" data-slide="next">
-                                            <span class="carousel-control-next-icon">
-                                            </span>
-                                        </a>
-                                    </div>
-                                </div>
+                        <div class="music-container row">
+                            <img class="music-icon" src="<?=base_url()?>/assets/images/temp/user.png" />
+                            <div class="carousel-music-info">
+                                <p>
+                                    Music Name
+                                    <br />
+                                    by Author Name
+                                </p>
                             </div>
+                            <button class="button-play-cat" type="button"
+                                id="btn-play"></button>
+                            <div class="audio-spectrum-car"></div>
+                            <p class="music-duration-car">03.00</p>
+                            <button class="btn-download-car fas fa-download"></button>
                         </div>
-                    </div>
+                                            </div>
+
+
+                    </div>                
+
                 </div>
                 <div class="col-md-4 float-card">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum laborum, quod recusandae sit
@@ -344,7 +278,7 @@
             <div class="centered-container">
                 <div class="music-preview-container row">
                     <div class="col-sm-1">
-                        <img class="music-icon" src="../../images/temp/user.png" />
+                        <img class="music-icon" src="<?=base_url()?>/assets/images/temp/user.png" />
                     </div>
                     <div class="col-sm-2">
                         <a href="previewMusic.html">
@@ -376,7 +310,7 @@
                 </div>
                 <div class="music-preview-container row">
                     <div class="col-sm-1">
-                        <img class="music-icon" src="../../images/temp/user.png" />
+                        <img class="music-icon" src="<?=base_url()?>/assets/images/temp/user.png" />
                     </div>
                     <div class="col-sm-2">
                         <a href="previewMusic.html">
@@ -408,7 +342,7 @@
                 </div>
                 <div class="music-preview-container row">
                     <div class="col-sm-1">
-                        <img class="music-icon" src="../../images/temp/user.png" />
+                        <img class="music-icon" src="<?=base_url()?>/assets/images/temp/user.png" />
                     </div>
                     <div class="col-sm-2">
                         <a href="previewMusic.html">
@@ -440,7 +374,7 @@
                 </div>
                 <div class="music-preview-container row">
                     <div class="col-sm-1">
-                        <img class="music-icon" src="../../images/temp/user.png" />
+                        <img class="music-icon" src="<?=base_url()?>/assets/images/temp/user.png" />
                     </div>
                     <div class="col-sm-2">
                         <a href="previewMusic.html">
@@ -472,7 +406,7 @@
                 </div>
                 <div class="music-preview-container row">
                     <div class="col-sm-1">
-                        <img class="music-icon" src="../../images/temp/user.png" />
+                        <img class="music-icon" src="<?=base_url()?>/assets/images/temp/user.png" />
                     </div>
                     <div class="col-sm-2">
                         <a href="previewMusic.html">
@@ -517,112 +451,6 @@
             </div>
         </div>
     </div>
-
-
-    <footer class="footer">
-        <div class="container-fluid text-center text-md-left">
-            <div class="row">
-                <!-- Contact -->
-                <div class="col-md-2 mt-md-0 mt-3">
-                    <h5 class="text-uppercase">Contact Us</h5>
-                    <ul class="list-unstyled mf-t">
-                        <li>
-                            <a>+62 345 6789 0123</a>
-                        </li>
-                        <li>
-                            <a>admin@bliho.com</a>
-                        </li>
-                        <li>
-                            <a href="#">Find a Store</a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- Contact -->
-                <!-- Pembatas -->
-                <hr class="clearfix w-100 d-md-none pb-3" />
-                <!-- Pembatas -->
-                <!-- costumer -->
-                <div class="col-md-2 mt-md-0 mt-3">
-                    <h5 class="text-uppercase">Costumer service</h5>
-                    <ul class="list-unstyled mf-t">
-                        <li>
-                            <a href="#">Contact Us</a>
-                        </li>
-                        <li>
-                            <a href="#">Ordering & Payments</a>
-                        </li>
-                        <li>
-                            <a href="#">Shipping</a>
-                        </li>
-                        <li>
-                            <a href="#">Returns</a>
-                        </li>
-                        <li>
-                            <a href="#">FAQ</a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- costumer -->
-                <!-- Pembatas -->
-                <hr class="clearfix w-100 d-md-none pb-3" />
-                <!-- Pembatas -->
-                <!-- information -->
-                <div class="col-md-2 mt-md-0 mt-3">
-                    <h5 class="text-uppercase">Information</h5>
-                    <ul class="list-unstyled mf-t">
-                        <li>
-                            <a href="#">About Bliho</a>
-                        </li>
-                        <li>
-                            <a href="#">Work With Us</a>
-                        </li>
-                        <li>
-                            <a href="#">Privacy Policy</a>
-                        </li>
-                        <li>
-                            <a href="#">Terms & Conditions</a>
-                        </li>
-                        <li>
-                            <a href="#">Press Enquiries</a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- information -->
-                <!-- Pembatas -->
-                <hr class="clearfix w-100 d-md-none pb-3" />
-                <!-- Pembatas -->
-                <!-- mail -->
-                <div class="col-md-3 mt-md-0 mt-3">
-                    <h5>Subscribe to Bliho Via Email</h5>
-                    <ul class="list-unstyled mf-t">
-                        <li>
-                            <a>Excepteur sint occaecat cupidatat non proident, sunt in culpa
-                                qui officia</a>
-                        </li>
-                        <li>
-                            <div class="form-group">
-                                <div class="row mt-2">
-                                    <div class="col-md-7">
-                                        <input type="email" class="form-control input-email" id="usr"
-                                            placeholder="Email Address" />
-                                        <input type="email" class="form-control input-email" id="type"
-                                            placeholder="Email Address" />
-                                    </div>
-                                    <div class="col-md-5">
-                                        <button class="btn ml-3 subscribe-btn">
-                                            SUBSCRIBE
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <!-- mail -->
-            </div>
-        </div>
-    </footer>
-
     <script>
         window.onscroll = function () {
             scrollFunction();
@@ -722,7 +550,7 @@
                 partialRender: true,
                 scrollParent: false,
                 fillParent: false,
-                minPxPerSec: 2.1
+                minPxPerSec: 5.5                
             })
         }
 
@@ -745,7 +573,7 @@
                 partialRender: true,
                 scrollParent: false,
                 fillParent: false,
-                minPxPerSec: 1
+                minPxPerSec: 2.5
             })
         }
         // var spectrumCatalog = WaveSurfer.create
@@ -767,7 +595,7 @@
             partialRender: true,
             scrollParent: false,
             fillParent: false,
-            minPxPerSec: 1.8
+            minPxPerSec: 4.5
         });
 
         buttons.play.addEventListener(
@@ -803,25 +631,39 @@
                 spectrum.drawBuffer();
 
                 spectrum.seekTo(currentProgress);
-
-                // buttons.stop.disabled = false;
-                // buttons.pause.disabled = true;
                 buttons.play.disabled = false;
             },
             false
         );
-        spectrum.load("../../assets/Maroon 5 - Girls Like You ft. Cardi B.mp3");
+        spectrum.load("<?=base_url()?>assets/dummy/Radwips-Yumeterou.mp3");
 
         for (let i = 0; i < ws.length; i++) {
-            ws[i].load("../../assets/Maroon 5 - Girls Like You ft. Cardi B.mp3");
+            ws[i].load("<?=base_url()?>assets/dummy/Radwips-Yumeterou.mp3");
         }
-        for (let i = 0; i < ws.length; i++) {
-            wsCarousel[i].load("../../assets/Maroon 5 - Girls Like You ft. Cardi B.mp3");
+        for (let i = 0; i < wsCarousel.length; i++) {
+            wsCarousel[i].load("<?=base_url()?>assets/dummy/Radwips-Yumeterou.mp3");
         }
     </script>
+       <script>
+        // let btnDownload = document.getElementById(btn - download);
+        $(document).ready(function () {
+            $('.variable-width').slick({
+                dots: true,
+                infinite: true,
+                speed: 300,
+                slidesToShow: 5,
+                variableWidth: true,
+                prevArrow: '<button type="button" class="slick-prev ">Previous</button>'
+            });
 
-
+            $('.multiple-items').slick({
+                infinite: true,
+                slidesToShow: 2,
+                slidesToScroll: 2
+            });
+        })
+    </script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="<?=base_url()?>assets/css/slick/slick.min.js"></script>
 </body>
-
-
-</html>

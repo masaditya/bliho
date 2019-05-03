@@ -1,4 +1,3 @@
-<html>
   <head>
     <title>Bliho.</title>
     <link
@@ -13,7 +12,7 @@
       integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href=" <?=base_url()?>assets/css/css/style.css" />
+    <link rel="stylesheet" href="<?=base_url()?>assets/css/css/style.css" />
     <link rel="stylesheet" href="<?=base_url()?>assets/css/css/category.css" />
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -142,7 +141,7 @@
                   <img class="music-icon" src="<?=base_url()?>/assets/images/temp/user.png" />
                 </div>
                 <div class="col-sm-2">
-                  <a href="previewMusic.html">
+                  <a href="<?=base_url()?>index.php/music/preview">
                     <div class="music-info">
                       <p>
                         <strong style="font-weight:bold;">
@@ -174,15 +173,17 @@
                   <img class="music-icon" src="<?=base_url()?>/assets/images/temp/user.png" />
                 </div>
                 <div class="col-sm-2">
-                  <div class="music-info">
-                    <p>
-                      <strong style="font-weight:bold;">
-                        Music Name
-                      </strong>
-                      <br />
-                      by Author Name
-                    </p>
-                  </div>
+                  <a href="<?=base_url()?>index.php/music/preview">
+                    <div class="music-info">
+                      <p>
+                        <strong style="font-weight:bold;">
+                          Music Name
+                        </strong>
+                        <br />
+                        by Author Name
+                      </p>
+                    </div>
+                  </a>
                 </div>
                 <div class="col-sm-1 button-play">
                   <input type="button" class="btn-play" />
@@ -204,15 +205,17 @@
                   <img class="music-icon" src="<?=base_url()?>/assets/images/temp/user.png" />
                 </div>
                 <div class="col-sm-2">
-                  <div class="music-info">
-                    <p>
-                      <strong style="font-weight:bold;">
-                        Music Name
-                      </strong>
-                      <br />
-                      by Author Name
-                    </p>
-                  </div>
+                  <a href="<?=base_url()?>index.php/music/preview">
+                    <div class="music-info">
+                      <p>
+                        <strong style="font-weight:bold;">
+                          Music Name
+                        </strong>
+                        <br />
+                        by Author Name
+                      </p>
+                    </div>
+                  </a>
                 </div>
                 <div class="col-sm-1 button-play">
                   <input type="button" class="btn-play" />
@@ -234,15 +237,17 @@
                   <img class="music-icon" src="<?=base_url()?>/assets/images/temp/user.png" />
                 </div>
                 <div class="col-sm-2">
-                  <div class="music-info">
-                    <p>
-                      <strong style="font-weight:bold;">
-                        Music Name
-                      </strong>
-                      <br />
-                      by Author Name
-                    </p>
-                  </div>
+                  <a href="<?=base_url()?>index.php/music/preview">
+                    <div class="music-info">
+                      <p>
+                        <strong style="font-weight:bold;">
+                          Music Name
+                        </strong>
+                        <br />
+                        by Author Name
+                      </p>
+                    </div>
+                  </a>
                 </div>
                 <div class="col-sm-1 button-play">
                   <input type="button" class="btn-play" />
@@ -264,15 +269,17 @@
                   <img class="music-icon" src="<?=base_url()?>/assets/images/temp/user.png" />
                 </div>
                 <div class="col-sm-2">
-                  <div class="music-info">
-                    <p>
-                      <strong style="font-weight:bold;">
-                        Music Name
-                      </strong>
-                      <br />
-                      by Author Name
-                    </p>
-                  </div>
+                  <a href="<?=base_url()?>index.php/music/preview">
+                    <div class="music-info">
+                      <p>
+                        <strong style="font-weight:bold;">
+                          Music Name
+                        </strong>
+                        <br />
+                        by Author Name
+                      </p>
+                    </div>
+                  </a>
                 </div>
                 <div class="col-sm-1 button-play">
                   <input type="button" class="btn-play" />
@@ -418,11 +425,6 @@
         false
       );
     };
-      
-      // for
-      // spectrum.on("ready", function() {
-      //   buttons.play.disabled = false;
-      // });
 
       window.addEventListener(
         "resize",
@@ -444,4 +446,3 @@
         }
     </script>
   </body>
-</html>

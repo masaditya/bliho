@@ -17,8 +17,6 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
   </script>
-  <script src="js/loader.js"></script>
-
 </head>
 
 <body>
@@ -92,8 +90,23 @@
                   </div>
                 </form>
               </div>
-              <li class="dropdown">Type <span class="fas fa-angle-down"></span></li>
-
+              <li id="dropdown-type" class="dropdown">Type <span class="fas fa-angle-down"></span></li>
+              <div id="filter-type" class="filter-checkbox">
+                <form class="form-filter">
+                  <div class="form-group">
+                    <input type="checkbox" id="html" />
+                    <label for="html">Human</label>
+                  </div>
+                  <div class="form-group">
+                    <input type="checkbox" id="css" />
+                    <label for="css">Tools</label>
+                  </div>
+                  <div class="form-group">
+                    <input type="checkbox" id="javascript" />
+                    <label for="javascript">Building</label>
+                  </div>
+                </form>
+              </div>
               <li id="title"> <strong> Price </strong> </li>
               <hr>
               <li id="dropdown-premium" class="dropdown">
@@ -136,6 +149,7 @@
           <div id="items-row" class="col-lg-10">
             <div class="item-row row">
               <div class="col col-md-4">
+                <a href="<?=base_url()?>index.php/illustration/preview">
                 <div class="card" style="width: 100%; border-radius: 5%;">
                   <img class="card-img-top" src="<?=base_url() ?>assets/images/temp/1.png" alt="Card image cap" />
                   <div class="card-body">
@@ -153,8 +167,10 @@
                     </div>
                   </div>
                 </div>
+                </a>
               </div>
               <div class="col col-md-4">
+                <a href="<?=base_url()?>index.php/illustration/preview">
                 <div class="card" style="width: 100%; border-radius: 5%;">
                   <img class="card-img-top" src="<?=base_url() ?>assets/images/temp/2.png" alt="Card image cap" />
                   <div class="card-body">
@@ -172,8 +188,10 @@
                     </div>
                   </div>
                 </div>
+                </a>
               </div>
               <div class="col col-md-4">
+                <a href="<?=base_url()?>index.php/illustration/preview">
                 <div class="card" style="width: 100%; border-radius: 5%;">
                   <img class="card-img-top" src="<?=base_url() ?>assets/images/temp/3.png" alt="Card image cap" />
                   <div class="card-body">
@@ -191,10 +209,12 @@
                     </div>
                   </div>
                 </div>
+                </a>
               </div>
             </div>
             <div class="item-row row">
               <div class="col col-md-4">
+                <a href="<?=base_url()?>index.php/illustration/preview">
                 <div class="card" style="width: 100%; border-radius: 5%;">
                   <img class="card-img-top" src="<?=base_url() ?>assets/images/temp/1.png" alt="Card image cap" />
                   <div class="card-body">
@@ -212,8 +232,10 @@
                     </div>
                   </div>
                 </div>
+                </a>
               </div>
               <div class="col col-md-4">
+                <a href="<?=base_url()?>index.php/illustration/preview">
                 <div class="card" style="width: 100%; border-radius: 5%;">
                   <img class="card-img-top" src="<?=base_url() ?>assets/images/temp/2.png" alt="Card image cap" />
                   <div class="card-body">
@@ -231,17 +253,17 @@
                     </div>
                   </div>
                 </div>
+                </a>
               </div>
               <div class="col col-md-4">
+                <a href="<?=base_url()?>index.php/illustration/preview">
                 <div class="card" style="width: 100%; border-radius: 5%;">
                   <img class="card-img-top" src="<?=base_url() ?>assets/images/temp/3.png" alt="Card image cap" />
                   <div class="card-body">
                     <div class="row">
                       <div class="item col col-md-7 ">
                         <p class="item-name">Illustration Name - Vector</p>
-                        <a href="google.com">
-                          <p class="item-author">by Author Name</p>
-                        </a>
+                        <p class="item-author">by Author Name</p>
                       </div>
                       <div class="item col col-md-3">
                         <p class="item-type-name">Ai,PNG</p>
@@ -308,6 +330,9 @@
 
     $(document).ready(function () {
       changeContainer(!showFilter)
+      $('#filter-cb').toggle();
+      $('#filter-type').toggle();
+      $('#filter-premium-cb').toggle();
     });
 
     $(showButton).click(function () {
@@ -345,12 +370,24 @@
 
     }
 
+    let caret = document.querySelectorAll(".fa-angle-down");
+
     $('#dropdown-departement').on('click', function () {
       $('#filter-cb').toggle();
+      console.log(caret[0]);
+      $(caret[1]).toggleClass('fa-angle-down fa-angle-up');;
     })
+
+    $('#dropdown-type').on('click', function () {
+      $('#filter-type').toggle();
+      $(caret[2]).toggleClass('fa-angle-down fa-angle-up');;
+    })
+
 
     $('#dropdown-premium').on('click', function () {
       $('#filter-premium-cb').toggle();
+      $(caret[3]).toggleClass('fa-angle-down fa-angle-up');;
+
     })
 
     let btnColor = document.querySelectorAll(".color-button");
