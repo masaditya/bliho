@@ -1,29 +1,25 @@
 
 <head>
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
-    <!-- Bootstrap core CSS -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Material Design Bootstrap -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.5/css/mdb.min.css" rel="stylesheet">
     <title>Bliho.</title>
+
+    <!-- cloud fa, bootstrap -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+    <!-- local -->
     <link rel="stylesheet" href="<?=base_url()?>assets/css/css/style.css">
     <link rel="stylesheet" href="<?=base_url()?>assets/css/css/preview.css">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-    </script>
+    
+    <!-- tagsinput -->
+    <link rel="stylesheet" href="<?=base_url() ?>assets/css/bootstrap-tagsinput.css">
+    <script type="text/javascript" src="<?=base_url()?>assets/js/bootstrap-tagsinput.min.js"></script>
+
+    <!-- modal -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
-    <!-- <script src="js/loader.js"></script>
-    <script src="js/EZView.js"></script> -->
+    
     <!-- slick -->
     <link rel="stylesheet" type="text/css" href="<?=base_url()?>assets/css/slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="<?=base_url()?>assets/css/slick/slick-theme.css" />
@@ -159,30 +155,7 @@
                         </div>
                         <h6 style="margin-left: 70px;"> <strong>Items Tag</strong> </h6>
                         <div class="tag-flex-container">
-                            <div class="tags"> Value
-                                <i class="fas fa-times"></i>
-                            </div>
-                            <div class="tags"> Vector
-                                <i class="fas fa-times"></i>
-                            </div>
-                            <div class="tags"> Grey
-                                <i class="fas fa-times"></i>
-                            </div>
-                            <div class="tags"> Purple
-                                <i class="fas fa-times"></i>
-                            </div>
-                            <div class="tags"> Luggage
-                                <i class="fas fa-times"></i>
-                            </div>
-                            <div class="tags"> Vacation
-                                <i class="fas fa-times"></i>
-                            </div>
-                            <div class="tags"> Hat
-                                <i class="fas fa-times"></i>
-                            </div>
-                            <div class="tags"> Trip
-                                <i class="fas fa-times"></i>
-                            </div>
+                            <input id="tagsinput" type="text" value="Value,Vector,Grey,Purple" data-role="tagsinput" />                            
                         </div>
                     </div>
                 </div>
@@ -512,9 +485,16 @@
                 slidesToScroll: 2
             });
         })
+
+        let taginput = document.getElementById('tagsinput');
+
+        $(taginput).tagsinput({
+        tagClass: function(item) {
+            return (item.length > 10 ? 'big' : 'small');
+        }, maxTags: 7,
+        tagClass: 'big'
+        });
     </script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="<?=base_url()?>assets/css/slick/slick.min.js"></script>
 
 </body>

@@ -477,7 +477,6 @@
 
     <script>
 
-        let taginput = document.getElementById('tagsinput');
 
 
         
@@ -539,6 +538,9 @@
             console.log($(taginput).tagsinput('items'))
         })
 
+        
+        let taginput = document.getElementById('tagsinput');
+
         $(taginput).tagsinput({
         tagClass: function(item) {
             return (item.length > 10 ? 'big' : 'small');
@@ -554,11 +556,6 @@
 
 
     
-<!-- 
-    <script>
-        let btnDownload = document.getElementById(btn - download);
-    </script> -->
-
 
 </body>
 
