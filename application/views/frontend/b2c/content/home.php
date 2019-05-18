@@ -174,40 +174,46 @@
   <script>
     let icon1 = anime({
       targets: "#icon-1",
-      translateX: "0px",
-      translateY: "0px",
-      scale: 2,
+      // translateX: "-50px",
+      // translateY: "0px",
+      translateX: "-450px",
+      translateY: "-230px",
+      scale: 1,
       borderRadius: "20%"
     });
 
     let icon2 = anime({
       targets: "#icon-2",
-      translateX: "-150px",
-      translateY: "-270px",
-      scale: 0.7,
+      // translateX: "-450px",
+      // translateY: "-230px",
+      translateX: "-270px",
+      translateY: "-100px",
+      scale: 1,
       borderRadius: "20%"
     });
 
     let icon3 = anime({
       targets: "#icon-3",
-      translateX: "-270px",
-      translateY: "-180px",
-      scale: 1,
+      // translateX: "-270px",
+      // translateY: "-100px",
+      translateX: "-50px",
+      translateY: "0px",
+      scale: 1.5,
       borderRadius: "20%"
     });
 
     let icon4 = anime({
       targets: "#icon-4",
-      translateX: "200px",
-      translateY: "230px",
+      translateX: "150px",
+      translateY: "130px",
       scale: 1,
       borderRadius: "20%"
     });
     let icon5 = anime({
       targets: "#icon-5",
-      translateX: "50px",
-      translateY: "180px",
-      scale: 0.8,
+      translateX: "300px",
+      translateY: "270px",
+      scale: 1,
       borderRadius: "20%"
     });
 
@@ -279,46 +285,52 @@
 
     let posIcon = [{
         icon: 1,
-        xpos: 0,
-        ypos: 0,
-        scale: 1.4
+        // xpos: -50,
+        // ypos: 0,
+        xpos: -450,
+        ypos: -230,
+        scale: 1
       },
       {
         icon: 2,
-        xpos: -150,
-        ypos: -270,
-        scale: 0.7
+        // xpos: -450,
+        // ypos: -230,
+        xpos: -270,
+        ypos: -100,
+        scale: 1
       },
       {
         icon: 3,
-        xpos: -270,
-        ypos: -180,
+        // xpos: -270,
+        // ypos: -100,
+         xpos: -50,
+        ypos: 0,
         scale: 1
       },
       {
         icon: 4,
-        xpos: 200,
-        ypos: 140,
+        xpos: 150,
+        ypos: 130,
         scale: 1
       },
       {
         icon: 5,
-        xpos: 120,
-        ypos: 180,
-        scale: 0.8
+        xpos: 300,
+        ypos: 270,
+        scale: 1
       }
     ];
 
 
     let selectorPos = [-50, -25, 0, 25, 50];
 
-    let xpostrans = [0, 0, 0, 25, -150];
-    let ypostrans = [0, 0, 50, 25, 50];
+    let xpostrans = [0, 0, 0, 0, 0];
+    let ypostrans = [0, 0, 0, 0, 0];
 
 
 
-    let animIcon = 1;
-    let animIconTemp = 1;
+    let animIcon = 3;
+    let animIconTemp = 3;
 
 
     let animList = 1;
@@ -330,6 +342,13 @@
 
 
     var icons = document.querySelectorAll(".icon-images");
+
+    const zoomIcon = (el, scale) => {
+      anime({
+        targets : el,
+        scale : scale
+      });
+    }
 
     const animateCategoryIcon = (
       el,
@@ -368,43 +387,60 @@
       );
     }
 
+
+
     enterIconsList = el => {
       animIconTemp = animIcon;
       animIcon = el.getAttribute("keys");
       console.log("icon terdahulu terpilih = " + animIconTemp);
-
       console.log("anim icon terpilih = " + animIcon);
-
-      if (animIconTemp != animIcon) {
-        animateCategoryIcon(
-          icons[animIcon - 1],
-          1.3,
-          250,
-          0,
-          (posIcon[animIcon - 1].xpos + xpostrans[animIcon - 1]) + "px",
-          (posIcon[animIcon - 1].ypos + ypostrans[animIcon - 1]) + "px",
-          "20%",
-          "easeInOutExpo",
-          "grayscale(0%)"
-        );
-
-        animateCategoryIcon(
-          icons[animIconTemp - 1],
-          posIcon[animIconTemp - 1].scale,
-          250,
-          100,
-          posIcon[animIconTemp - 1].xpos + "px",
-          posIcon[animIconTemp - 1].ypos + "px",
-          "20%",
-          "easeInOutExpo",
-          "grayscale(0%)"
-        );
-
-        // posIcon[animIconTemp - 1].xpos = posIcon[animIcon - 1].xpos;
-        // posIcon[animIconTemp - 1].ypos = posIcon[animIcon - 1].ypos;
-        // posIcon[animIconTemp - 1].scale = posIcon[animIcon - 1].scale;
-
+      let scale = 2;
+      let scale2 = 2;
+      zoomIcon(el, scale);
+      // mundur
+      for (let i = animIcon-1; i >= 0; i--) {
+        scale = scale - 0.3;
+        zoomIcon(icons[i], scale);
       }
+      // maju
+
+      for (let j = animIcon-1; j < icons.length; j++) {
+        
+        scale2 = scale2 - 0.3;
+        zoomIcon(icons[j], scale2);
+      }
+
+
+      // if (animIconTemp != animIcon) {
+      //   animateCategoryIcon(
+      //     icons[animIcon - 1],
+      //     1.5,
+      //     250,
+      //     0,
+      //     (posIcon[animIcon - 1].xpos + xpostrans[animIcon - 1]) + "px",
+      //     (posIcon[animIcon - 1].ypos + ypostrans[animIcon - 1]) + "px",
+      //     "20%",
+      //     "easeInOutExpo",
+      //     "grayscale(0%)"
+      //   );
+
+      //   animateCategoryIcon(
+      //     icons[animIconTemp - 1],
+      //     1,
+      //     250,
+      //     100,
+      //     posIcon[animIconTemp - 1].xpos + "px",
+      //     posIcon[animIconTemp - 1].ypos + "px",
+      //     "20%",
+      //     "easeInOutExpo",
+      //     "grayscale(0%)"
+      //   );
+
+      //   // posIcon[animIconTemp - 1].xpos = posIcon[animIcon - 1].xpos;
+      //   // posIcon[animIconTemp - 1].ypos = posIcon[animIcon - 1].ypos;
+      //   // posIcon[animIconTemp - 1].scale = posIcon[animIcon - 1].scale;
+
+      // }
     };
 
     const enterCategoryList = el => {
