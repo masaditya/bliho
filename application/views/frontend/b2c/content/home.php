@@ -174,9 +174,7 @@
   <script>
     let icon1 = anime({
       targets: "#icon-1",
-      // translateX: "-50px",
-      // translateY: "0px",
-      translateX: "-450px",
+      translateX: "50px",
       translateY: "-230px",
       scale: 1,
       borderRadius: "20%"
@@ -184,10 +182,8 @@
 
     let icon2 = anime({
       targets: "#icon-2",
-      // translateX: "-450px",
-      // translateY: "-230px",
-      translateX: "-270px",
-      translateY: "-100px",
+      translateX: "-150px",
+      translateY: "-200px",
       scale: 1,
       borderRadius: "20%"
     });
@@ -198,21 +194,22 @@
       // translateY: "-100px",
       translateX: "-50px",
       translateY: "0px",
-      scale: 1.5,
+      scale: 1.7,
       borderRadius: "20%"
     });
 
     let icon4 = anime({
       targets: "#icon-4",
       translateX: "150px",
-      translateY: "130px",
+      translateY: "270px",
+     
       scale: 1,
       borderRadius: "20%"
     });
     let icon5 = anime({
       targets: "#icon-5",
-      translateX: "300px",
-      translateY: "270px",
+       translateX: "-50px",
+      translateY: "200px",
       scale: 1,
       borderRadius: "20%"
     });
@@ -394,21 +391,25 @@
       animIcon = el.getAttribute("keys");
       console.log("icon terdahulu terpilih = " + animIconTemp);
       console.log("anim icon terpilih = " + animIcon);
-      let scale = 2;
-      let scale2 = 2;
-      zoomIcon(el, scale);
-      // mundur
-      for (let i = animIcon-1; i >= 0; i--) {
-        scale = scale - 0.3;
-        zoomIcon(icons[i], scale);
-      }
-      // maju
 
-      for (let j = animIcon-1; j < icons.length; j++) {
+      let scale = 1.7;
+      icons.forEach(icon => {
+        zoomIcon(icon, 1);
+      });
+      zoomIcon(el, scale);
+
+      // mundur
+      // for (let i = animIcon-1; i >= 0; i--) {
+      //   scale = scale - 0.3;
+      //   zoomIcon(icons[i], scale);
+      // }
+      // // maju
+
+      // for (let j = animIcon-1; j < icons.length; j++) {
         
-        scale2 = scale2 - 0.3;
-        zoomIcon(icons[j], scale2);
-      }
+      //   scale2 = scale2 - 0.3;
+      //   zoomIcon(icons[j], 1);
+      // }
 
 
       // if (animIconTemp != animIcon) {
