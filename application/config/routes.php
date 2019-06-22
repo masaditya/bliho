@@ -58,8 +58,12 @@ $route['admin'] 				                  = 'admin/Dashboard';
 $route['admin/login'] 				                  = 'admin/Login';
 
 // user auth
-$route['user/signin'] = 'welcome/signin';
+$route['user/signin'] = 'welcome/signin';   
 $route['user/signup'] = 'welcome/signup';
+
+// user dashboard
+$route['user/dashboard'] = 'user/dashboard';
+
 
 // author auth
 $route['author/signin'] = 'author/signin';

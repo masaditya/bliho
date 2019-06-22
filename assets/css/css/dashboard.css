@@ -1,0 +1,19 @@
+.profile-picture {
+	width: 6em;
+}
+
+.user-caption {
+	font-size: 0.8em;
+}
+
+.button-float-right {
+	display: block;
+	top: 25%;
+	right: -2%;
+	position: absolute;
+	border: 2px #e05555 solid;
+	background-color: #ffff;
+	border-radius: 5em;
+	font-size: 1.3em;
+	font-weight: bold;
+}
