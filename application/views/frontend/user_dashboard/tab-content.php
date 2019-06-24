@@ -11,14 +11,14 @@
 
 <body>
 	<div class="container">
-		<div class="d-flex justify-content-center ">
-			<ul class="nav bg-white rounded" role="tablist">
-				<li class="nav-item tab active-tab">
-					<a href="#step-1" id="step1-tab" class="nav-link active" aria-selected="true" data-toggle="tab"
+		<div class="d-flex w-auto justify-content-center ">
+			<ul class="nav shadow bg-white rounded" role="tablist">
+				<li class="nav-item tab ">
+					<a href="#step-1" id="step1-tab" class="nav-link " aria-selected="true" data-toggle="tab"
 						role="tab">Profile</a>
 				</li>
-				<li class="nav-item tab">
-					<a href="#step-2" id="step2-tab" class="nav-link " aria-selected="false" data-toggle="tab"
+				<li class="nav-item tab active-tab">
+					<a href="#step-2" id="step2-tab" class="nav-link active" aria-selected="false" data-toggle="tab"
 						role="tab">Following</a>
 				</li>
 				<li class="nav-item tab">
@@ -42,13 +42,14 @@
 	</div>
 
 	<div class="container mt-5 tab-content">
-		<div class="tab-pane fade show active" id="step-1" aria-labelledby="step1-tab" role="tabpanel">
+		<div class="tab-pane fade " id="step-1" aria-labelledby="step1-tab" role="tabpanel">
 			<?= include 'section-profile.php' ?>
 		</div>
 
 		<!-- section following -->
-		<div class="tab-pane fade" id="step-2" aria-labelledby="step2-tab" role="tabpanel">
-			Following
+		<div class="tab-pane fade show active" id="step-2" aria-labelledby="step2-tab" role="tabpanel">
+			<?php include 'section-follow-empty.php' ?>
+
 		</div>
 
 		<!-- section setting -->
