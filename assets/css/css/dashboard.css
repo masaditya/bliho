@@ -14,6 +14,10 @@ body {
     font-size: 0.8em;
 }
 
+.w-65 {
+    width: 65% !important;
+}
+
 .rounded-md {
     border-radius: 2em;
 }
@@ -36,7 +40,54 @@ body {
     font-weight: bold;
 }
 
+.setting-float-left {
+    display: block;
+    top: 22em;
+    left: -15em;
+    position: absolute;
+}
 
+
+.border-2 {
+    border-width: 2px !important;
+}
+
+.upload-box .btn-file {
+    background-color: #b3b3b3;
+}
+
+.upload-box .hold {
+    float: left;
+    width: 100%;
+    position: relative;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 4px;
+}
+
+.upload-box .hold a {
+    font: 400 14px/36px 'Roboto', sans-serif;
+    color: #666;
+    text-decoration: none;
+}
+
+.upload-box .btn-file {
+    position: relative;
+    overflow: hidden;
+    float: left;
+    color: #fff;
+    margin: 0 10px 0 0;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.upload-box .btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    /* display: block; */
+}
 
 .container li.nav-item {
     padding: 0 2em;
