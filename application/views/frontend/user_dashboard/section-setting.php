@@ -1,14 +1,16 @@
-<div class="container w-50 bg-light setting-float-left">
-	<div class="float-right">
-		<h4>Your Details</h4>
-		<li>
-			<a href="#profile" id="profiles-tab" class="nav-link active" aria-selected="true" data-toggle="tab"
-				role="tab">Profile</a>
-		</li>
-		<li>
-			<a href="#email" id="emails-tab" class="nav-link " aria-selected="false" data-toggle="tab"
-				role="tab">Email</a>
-		</li>
+<div class="container w-50 shadows rounded-md pt-5 pb-3 pr-5 setting-float-left">
+	<div class="float-right mr-5">
+		<h3 class="text-white font-weight-bold">Your Details</h3>
+		<ul role="tablist">
+			<li class="list-unstyled ">
+				<a href="#profile" id="profiles-tab" class="text-white font-weight-bold nav-link active"
+					aria-selected="true" data-toggle="tab" role="tab">Profile</a>
+			</li>
+			<li class="list-unstyled">
+				<a href="#email" id="emails-tab" class="text-white font-weight-bold nav-link " aria-selected="false"
+					data-toggle="tab" role="tab">Email</a>
+			</li>
+		</ul>
 	</div>
 </div>
 <div class="mr-0 mb-5 ml-auto w-65 border rounded-sm border-2">

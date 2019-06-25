@@ -41,6 +41,7 @@ body {
 }
 
 .setting-float-left {
+    background-color: #b3b3b3;
     display: block;
     top: 22em;
     left: -15em;
