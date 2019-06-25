@@ -48,8 +48,9 @@
 
 		<!-- section following -->
 		<div class="tab-pane fade show active" id="step-2" aria-labelledby="step2-tab" role="tabpanel">
-			<?php include 'section-follow-empty.php' ?>
-
+			<div class="mb-5 pb-5">
+				<?php include 'section-follow.php' ?>
+			</div>
 		</div>
 
 		<!-- section setting -->

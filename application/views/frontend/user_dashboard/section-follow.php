@@ -1,9 +1,60 @@
-<div class="container pl-5 py-5 mb-5">
-	<h3 class="font-weight-bold">Lorem ipsum dolor sit amet, </h3>
-	<p class="mt-4 w-75 text-dark">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
-		euismod
-		tincidunt
-		ut laoreet
-		dolore magna aliquam erat volutpat.</p>
-	<button class="btn-cyan btn font-weight-bold my-5 px-4 py-2 btn-rounded">Browse Popular</button>
+<div class="container mb-4 border bg-light rounded-sm shadow">
+	<div class="row w-auto pt-1 pb-2">
+		<img
+			class="profile-item-picture rounded-circle py-3 ml-3"
+			src="<?=base_url()?>assets/images/temp/pic-user.png"
+			alt="user-profile picture"
+		/>
+		<div class="dashboard-item-info pl-4 py-3">
+			<p>Author Name</p>
+			<p>15k followers | 10k resources</p>
+			<p class="mt-3"><a href="">View profile</a></p>
+		</div>
+		<div class="dashboard-item-info pl-3">
+			<img src="<?=base_url()?>/assets/images/temp/2.png" />
+			<img src="<?=base_url()?>/assets/images/temp/3.png" />
+			<img src="<?=base_url()?>/assets/images/temp/1.png" />
+			<img src="<?=base_url()?>/assets/images/temp/2.png" />
+		</div>
+	</div>
+</div>
+<div class="container mb-4 border bg-light rounded-sm shadow">
+	<div class="row w-auto pt-1 pb-2">
+		<img
+			class="profile-item-picture rounded-circle py-3 ml-3"
+			src="<?=base_url()?>assets/images/temp/pic-user.png"
+			alt="user-profile picture"
+		/>
+		<div class="dashboard-item-info pl-4 py-3">
+			<p>Author Name</p>
+			<p>15k followers | 10k resources</p>
+			<p class="mt-3"><a href="">View profile</a></p>
+		</div>
+		<div class="dashboard-item-info pl-3">
+			<img src="<?=base_url()?>/assets/images/temp/2.png" />
+			<img src="<?=base_url()?>/assets/images/temp/3.png" />
+			<img src="<?=base_url()?>/assets/images/temp/1.png" />
+			<img src="<?=base_url()?>/assets/images/temp/2.png" />
+		</div>
+	</div>
+</div>
+<div class="container mb-4 border bg-light rounded-sm shadow">
+	<div class="row w-auto pt-1 pb-2">
+		<img
+			class="profile-item-picture rounded-circle py-3 ml-3"
+			src="<?=base_url()?>assets/images/temp/pic-user.png"
+			alt="user-profile picture"
+		/>
+		<div class="dashboard-item-info pl-4 py-3">
+			<p>Author Name</p>
+			<p>15k followers | 10k resources</p>
+			<p class="mt-3"><a href="">View profile</a></p>
+		</div>
+		<div class="dashboard-item-info pl-3">
+			<img src="<?=base_url()?>/assets/images/temp/2.png" />
+			<img src="<?=base_url()?>/assets/images/temp/3.png" />
+			<img src="<?=base_url()?>/assets/images/temp/1.png" />
+			<img src="<?=base_url()?>/assets/images/temp/2.png" />
+		</div>
+	</div>
 </div>
