@@ -26,15 +26,15 @@
 						role="tab">Setting</a>
 				</li>
 				<li class="nav-item tab ">
-					<a href="#step-4" id="step4-tab" class="nav-link " aria-selected="true" data-toggle="tab"
+					<a href="#step-4" id="step4-tab" class="nav-link " aria-selected="false" data-toggle="tab"
 						role="tab">Download</a>
 				</li>
-				<li class="nav-item tab active-tab">
-					<a href="#step-5" id="step5-tab" class="nav-link active" aria-selected="false" data-toggle="tab"
+				<li class="nav-item tab ">
+					<a href="#step-5" id="step5-tab" class="nav-link " aria-selected="false" data-toggle="tab"
 						role="tab">Favorite</a>
 				</li>
-				<li class="nav-item tab">
-					<a href="#step-6" id="step6-tab" class="nav-link " aria-selected="false" data-toggle="tab"
+				<li class="nav-item tab active-tab">
+					<a href="#step-6" id="step6-tab" class="nav-link active " aria-selected="true" data-toggle="tab"
 						role="tab">My Subscription</a>
 				</li>
 			</ul>
@@ -64,13 +64,13 @@
 		</div>
 
 		<!-- section favorite -->
-		<div class="tab-pane fade show active" id="step-5" aria-labelledby="step5-tab" role="tabpanel">
+		<div class="tab-pane fade " id="step-5" aria-labelledby="step5-tab" role="tabpanel">
 			<?php include 'section-favorite.php' ?>
 		</div>
 
 		<!-- section subscription -->
-		<div class="tab-pane fade" id="step-6" aria-labelledby="step6-tab" role="tabpanel">
-			My Subscription
+		<div class="tab-pane fade show active" id="step-6" aria-labelledby="step6-tab" role="tabpanel">
+			<?php include 'section-subscription.php' ?>
 		</div>
 	</div>
 
