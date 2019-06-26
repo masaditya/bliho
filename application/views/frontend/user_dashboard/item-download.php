@@ -1,6 +1,6 @@
 <div class="row">
 	<div class="col-sm-5 pb-3 d-flex">
-		<img class="profile-picture" src="<?=base_url()?>/assets/images/temp/2.png" />
+		<img class="profile-picture rounded-xs" src="<?=base_url()?>/assets/images/temp/3.png" />
 		<p class="pl-3 user-caption my-auto font-weight-bold">Lorem ipsum dolor sit amet, consectetuer adipiscing
 		</p>
 	</div>

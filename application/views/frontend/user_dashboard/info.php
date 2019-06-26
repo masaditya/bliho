@@ -9,7 +9,7 @@
 </head>
 <div class="container my-5 justify-content-center center">
 	<div class=" row ">
-		<img class="profile-picture rounded-sm border" src="<?=base_url()?>assets/images/temp/pic-user.png"
+		<img class="profile-picture rounded-xs border" src="<?=base_url()?>assets/images/temp/pic-user.png"
 			alt="user-profile picture">
 		<div class="ml-3 mt-4">
 			<h4 class=" font-weight-bold">User Name</h4>

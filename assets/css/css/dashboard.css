@@ -10,6 +10,11 @@ body {
     width: 5em;
 }
 
+.avatar-card {
+    width: 2.5em;
+}
+
+
 .user-caption {
     font-size: 0.8em;
 }
@@ -28,6 +33,16 @@ body {
 
 .rounded-xs {
     border-radius: 0.5em;
+}
+
+.rounded-top-sm {
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+}
+
+.rounded-bottom-sm {
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
 }
 
 
@@ -208,4 +223,23 @@ input:checked+.slider:before {
     max-height: 6.5em;
     margin-left: 1em;
     margin-top: 0.5em;
+}
+
+.card-info h6 {
+    font-size: 0.7em;
+}
+
+.card-info p {
+    font-size: 0.9em;
+}
+
+.btn-heart {
+    border: none;
+    color: #e05555;
+    background-color: transparent;
+    font-size: 1.5em;
+}
+
+.btn-heart:focus {
+    outline: none;
 }
