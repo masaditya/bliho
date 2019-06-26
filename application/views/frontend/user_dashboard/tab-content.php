@@ -21,12 +21,12 @@
 					<a href="#step-2" id="step2-tab" class="nav-link " aria-selected="false" data-toggle="tab"
 						role="tab">Following</a>
 				</li>
-				<li class="nav-item tab active-tab">
-					<a href="#step-3" id="step3-tab" class="nav-link active" aria-selected="true" data-toggle="tab"
+				<li class="nav-item tab ">
+					<a href="#step-3" id="step3-tab" class="nav-link " aria-selected="false" data-toggle="tab"
 						role="tab">Setting</a>
 				</li>
-				<li class="nav-item tab">
-					<a href="#step-4" id="step4-tab" class="nav-link " aria-selected="false" data-toggle="tab"
+				<li class="nav-item tab active-tab">
+					<a href="#step-4" id="step4-tab" class="nav-link active" aria-selected="true" data-toggle="tab"
 						role="tab">Download</a>
 				</li>
 				<li class="nav-item tab">
@@ -54,13 +54,13 @@
 		</div>
 
 		<!-- section setting -->
-		<div class="tab-pane fade show active" id="step-3" aria-labelledby="step3-tab" role="tabpanel">
+		<div class="tab-pane fade " id="step-3" aria-labelledby="step3-tab" role="tabpanel">
 			<?php include 'section-setting.php' ?>
 		</div>
 
 		<!-- section download -->
-		<div class="tab-pane fade" id="step-4" aria-labelledby="step4-tab" role="tabpanel">
-			Download
+		<div class="tab-pane fade show active" id="step-4" aria-labelledby="step4-tab" role="tabpanel">
+			<?php include 'section-download.php' ?>
 		</div>
 
 		<!-- section favorite -->
