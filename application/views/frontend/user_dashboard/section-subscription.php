@@ -1,9 +1,7 @@
 <div class="container">
 	<h4 class="text-center">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</h4>
-
-	<div class="row">
-
-		<div class="col-lg-6 shadow px-3 py-5 rounded-xs my-4">
+	<div class="row mb-5">
+		<div class="col-lg-6 shadow px-3 py-5 rounded-xs my-5">
 			<div class="row w-100 m-0">
 				<div class="col-sm-8">
 				</div>
@@ -23,10 +21,8 @@
 			<?php include 'item-list-subscript.php' ?>
 			<?php include 'item-list-subscript.php' ?>
 			<?php include 'item-list-subscript.php' ?>
-
 		</div>
 		<div class="col-lg-5 my-auto">
-
 			<div class="container h-auto ">
 				<div class="shadow rounded-xs my-5">
 					<div class="d-flex w-100 m-0 p-4">
@@ -39,7 +35,6 @@
 							now</button>
 					</div>
 				</div>
-
 				<div class="shadow rounded-xs my-5">
 					<div class="d-flex w-100 m-0 p-4">
 						<div class="">
@@ -52,8 +47,6 @@
 					</div>
 				</div>
 			</div>
-
-
 		</div>
 	</div>
 </div>
