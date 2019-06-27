@@ -58,10 +58,16 @@ body {
     font-weight: bold;
 }
 
+.button-float-right:hover {
+    color: #ffff;
+    border: 2px #ffff solid;
+    background-color: #e05555;
+}
+
 .setting-float-left {
     background-color: #b3b3b3;
     display: block;
-    top: 15em;
+    top: 25em;
     left: -20%;
     position: absolute;
 }
