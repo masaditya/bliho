@@ -21,8 +21,8 @@
 					<a href="#step-2" id="step2-tab" class="nav-link " aria-selected="false" data-toggle="tab"
 						role="tab">Following</a>
 				</li>
-				<li class="nav-item tab ">
-					<a href="#step-3" id="step3-tab" class="nav-link " aria-selected="false" data-toggle="tab"
+				<li class="nav-item tab active-tab">
+					<a href="#step-3" id="step3-tab" class="nav-link active" aria-selected="true" data-toggle="tab"
 						role="tab">Setting</a>
 				</li>
 				<li class="nav-item tab ">
@@ -33,8 +33,8 @@
 					<a href="#step-5" id="step5-tab" class="nav-link " aria-selected="false" data-toggle="tab"
 						role="tab">Favorite</a>
 				</li>
-				<li class="nav-item tab active-tab">
-					<a href="#step-6" id="step6-tab" class="nav-link active " aria-selected="true" data-toggle="tab"
+				<li class="nav-item tab ">
+					<a href="#step-6" id="step6-tab" class="nav-link  " aria-selected="false" data-toggle="tab"
 						role="tab">My Subscription</a>
 				</li>
 			</ul>
@@ -54,7 +54,7 @@
 		</div>
 
 		<!-- section setting -->
-		<div class="tab-pane fade " id="step-3" aria-labelledby="step3-tab" role="tabpanel">
+		<div class="tab-pane fade show active" id="step-3" aria-labelledby="step3-tab" role="tabpanel">
 			<?php include 'section-setting.php' ?>
 		</div>
 
@@ -69,7 +69,7 @@
 		</div>
 
 		<!-- section subscription -->
-		<div class="tab-pane fade show active" id="step-6" aria-labelledby="step6-tab" role="tabpanel">
+		<div class="tab-pane fade " id="step-6" aria-labelledby="step6-tab" role="tabpanel">
 			<?php include 'section-subscription.php' ?>
 		</div>
 	</div>
