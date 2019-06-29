@@ -69,6 +69,11 @@ $route['user/dashboard'] = 'user/dashboard';
 $route['author/signin'] = 'author/signin';
 $route['author/signup'] = 'author/signup';
 
+
+// author dashboard
+$route['author/dashboard'] = 'author/dashboard';
+
+
 $route['training-manual'] = 'trainingmanual';
 $route['training-manual/preview'] = 'trainingmanual/preview';
 

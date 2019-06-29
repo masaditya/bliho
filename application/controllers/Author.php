@@ -44,4 +44,12 @@ class Author extends CI_Controller {
 		$this->load->view('frontend/b2c/content/content-apply');
 		$this->load->view('frontend/b2c/main/footer');
 	}
+
+	public function dashboard()
+	{
+		$this->load->view('frontend/b2c/main/header');
+        $this->load->view('frontend/author_dashboard/info');
+		$this->load->view('frontend/author_dashboard/tab-content');
+		$this->load->view('frontend/b2c/main/footer');
+	}
 }
