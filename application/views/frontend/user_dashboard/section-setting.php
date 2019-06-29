@@ -70,6 +70,5 @@
 	</div>
 	<div class="w-100 text-right mb-5">
 		<button class="btn-cyan btn-rounded py-2 user-caption ml-auto mr-1"> <b>Save Changes </b></button>
-
 	</div>
 </div>

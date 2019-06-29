@@ -130,7 +130,7 @@
             Subscribe now and <br />
             start creating
           </h2>
-          <button class="btn">Bring Me to The Premium Content</button>
+          <button class="btn-cyan rounded-xs">Bring Me to The Premium Content</button>
         </div>
       </div>
     </div>

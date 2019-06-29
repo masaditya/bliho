@@ -1,20 +1,31 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,900');
+/* @import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,900');
 
 @font-face {
-	font-family: "Maax Rounded";
-	src: url("//db.onlinewebfonts.com/t/10875ab5a017f30340245f91c470c330.eot");
-	src: url("//db.onlinewebfonts.com/t/10875ab5a017f30340245f91c470c330.eot?#iefix") format("embedded-opentype"),
-		url("//db.onlinewebfonts.com/t/10875ab5a017f30340245f91c470c330.woff2") format("woff2"),
-		url("//db.onlinewebfonts.com/t/10875ab5a017f30340245f91c470c330.woff") format("woff"),
-		url("//db.onlinewebfonts.com/t/10875ab5a017f30340245f91c470c330.ttf") format("truetype"),
-		url("//db.onlinewebfonts.com/t/10875ab5a017f30340245f91c470c330.svg#Maax Rounded") format("svg");
+    font-family: "Maax Rounded";
+    src: url("//db.onlinewebfonts.com/t/10875ab5a017f30340245f91c470c330.eot");
+    src: url("//db.onlinewebfonts.com/t/10875ab5a017f30340245f91c470c330.eot?#iefix") format("embedded-opentype"),
+        url("//db.onlinewebfonts.com/t/10875ab5a017f30340245f91c470c330.woff2") format("woff2"),
+        url("//db.onlinewebfonts.com/t/10875ab5a017f30340245f91c470c330.woff") format("woff"),
+        url("//db.onlinewebfonts.com/t/10875ab5a017f30340245f91c470c330.ttf") format("truetype"),
+        url("//db.onlinewebfonts.com/t/10875ab5a017f30340245f91c470c330.svg#Maax Rounded") format("svg");
+} */
+
+
+@font-face {
+	font-family: Museo-SansRounded;
+	src: url("./MuseoSansRounded-300.otf") format("opentype");
+}
+
+
+* {
+	font-family: 'Museo-SansRounded';
 }
 
 body {
 	position: absolute;
 	width: 100%;
 	overflow-x: hidden;
-	font-family: 'Raleway';
+
 }
 
 
@@ -689,4 +700,58 @@ footer .input-email {
 	cursor: pointer;
 	background-color: #ffffff;
 	color: #f25456;
+}
+
+
+.btn-rounded {
+	border-radius: 5em;
+	padding: 0.3em 2em;
+}
+
+.btn-outline-cyan {
+	background-color: #ffff;
+	color: #f25456;
+	border: 1.5px #ccc solid;
+}
+
+
+.btn-cyan:hover {
+	background-color: #ffffff;
+	color: #f25456;
+	border: 1px #ccc solid;
+
+}
+
+
+.btn-cyan {
+	background-color: #f25456;
+	color: #ffff;
+	border: 1px #ffff solid;
+}
+
+
+.w-65 {
+	width: 65% !important;
+}
+
+.rounded-md {
+	border-radius: 2em;
+}
+
+.rounded-sm {
+	border-radius: 1em;
+}
+
+.rounded-xs {
+	border-radius: 0.5em;
+}
+
+.rounded-top-sm {
+	border-top-left-radius: 1em;
+	border-top-right-radius: 1em;
+}
+
+.rounded-bottom-sm {
+	border-bottom-left-radius: 1em;
+	border-bottom-right-radius: 1em;
 }

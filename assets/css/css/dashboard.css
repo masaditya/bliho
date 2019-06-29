@@ -19,32 +19,6 @@ body {
     font-size: 0.8em;
 }
 
-.w-65 {
-    width: 65% !important;
-}
-
-.rounded-md {
-    border-radius: 2em;
-}
-
-.rounded-sm {
-    border-radius: 1em;
-}
-
-.rounded-xs {
-    border-radius: 0.5em;
-}
-
-.rounded-top-sm {
-    border-top-left-radius: 1em;
-    border-top-right-radius: 1em;
-}
-
-.rounded-bottom-sm {
-    border-bottom-left-radius: 1em;
-    border-bottom-right-radius: 1em;
-}
-
 
 .button-float-right {
     display: block;
@@ -190,32 +164,6 @@ input:checked+.slider:before {
 
 .slider.round:before {
     border-radius: 50%;
-}
-
-.btn-rounded {
-    border-radius: 5em;
-    padding: 0.3em 2em;
-}
-
-.btn-outline-cyan {
-    background-color: #ffff;
-    color: #f25456;
-    border: 1.5px #ccc solid;
-}
-
-
-.btn-cyan:hover {
-    background-color: #ffffff;
-    color: #f25456;
-    border: 1px #ccc solid;
-
-}
-
-
-.btn-cyan {
-    background-color: #f25456;
-    color: #ffff;
-    border: 1px #ffff solid;
 }
 
 .dashboard-item-info p {

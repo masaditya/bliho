@@ -24,8 +24,8 @@
             <input id="name" type="text" value="" name="name" />
         </div>
         <div class="btn-form">
-            <button class="button-payment">Login Now</button>
-            <p>Dont have Account? <a href="signup.html">Create account</a> </p>
+            <button class="btn-cyan rounded-xs py-1 px-3"> <b> Login Now </b></button>
+            <p>Dont have Account? <a href="signup">Create account</a> </p>
         </div>
     </div>
 </div>
