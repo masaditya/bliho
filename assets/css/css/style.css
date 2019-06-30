@@ -714,11 +714,19 @@ footer .input-email {
 	border: 1.5px #ccc solid;
 }
 
+.btn-outline-cyan:hover {
+	background-color: #f25456;
+	color: #ffff;
+	border: 1.5px #ffff solid;
+	font-weight: bold;
+}
+
 
 .btn-cyan:hover {
 	background-color: #ffffff;
 	color: #f25456;
 	border: 1px #ccc solid;
+	font-weight: bold;
 
 }
 
@@ -754,4 +762,81 @@ footer .input-email {
 .rounded-bottom-sm {
 	border-bottom-left-radius: 1em;
 	border-bottom-right-radius: 1em;
+}
+
+/* radio button fancy */
+
+
+.radio-fancy label {
+	font-weight: bold;
+	position: relative;
+	padding-left: 2em;
+	cursor: pointer;
+	margin-bottom: 1em;
+	font-size: 1em;
+}
+
+.radio-fancy input {
+	height: 1px;
+	width: 1px;
+	opacity: 0;
+}
+
+.radio-fancy .outside {
+	display: inline-block;
+	position: absolute;
+	left: 0;
+	top: 50%;
+	margin-top: -10px;
+	width: 20px;
+	height: 20px;
+	border: 2px solid #8f8f8f;
+	border-radius: 50%;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	background: none;
+}
+
+.radio-fancy .inside {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	display: inline-block;
+	border-radius: 50%;
+	width: 10px;
+	height: 10px;
+	background: #f25456;
+	left: 3px;
+	top: 3px;
+	-webkit-transform: scale(0, 0);
+	transform: scale(0, 0);
+}
+
+.radio-fancy .no-transforms .inside {
+	left: auto;
+	top: auto;
+	width: 0;
+	height: 0;
+}
+
+input {
+	/*  &:focus, &:active {
+		  + .outside {
+			border-color: $almost-black;
+		  }
+		}*/
+}
+
+.radio-fancy input:checked+.outside .inside {
+	-webkit-animation: radio-select 0.1s linear;
+	animation: radio-select 0.1s linear;
+	-webkit-transform: scale(1, 1);
+	transform: scale(1, 1);
+}
+
+.radio-fancy .no-transforms input:checked+.outside .inside {
+	width: 10px;
+	height: 10px;
 }

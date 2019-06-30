@@ -37,32 +37,24 @@
 				<div class="p-0">
 					<h3 class="ml-5 my-4 font-weight-bold">Email Settings</h3>
 				</div>
-				<div class="p-5 border-top">
-					<label for="one">
-						<input type="radio" id="one" name="item" value="1" />
-						<b>Rating reminders</b>
-						<p class="pl-3 user-caption">Send an email reminding me to rate an item a week after
-							purchase
-						</p>
-					</label>
-					<label for="two">
-						<input type="radio" id="two" name="item" value="2" />
-						<b>Item update notifications</b>
-						<p class="pl-3 user-caption">Send an email when an item I've purchased is updated
-						</p>
-					</label>
-					<label for="three">
-						<input type="radio" id="three" name="item" value="3" />
-						<b>Team comment notifications</b>
-						<p class="pl-3 user-caption">Send me an email when someone comments on one of my team items
-						</p>
-					</label>
-					<label for="four">
-						<input type="radio" id="four" name="item" value="4" />
-						<b>Daily summary emails</b>
-						<p class="pl-3 user-caption">Send me a daily summary of all items approved or rejected
-						</p>
-					</label>
+				<div class="p-5 border-top radio-fancy">
+					<label><input type="radio" class="radio-inline" name="radios" value=""><span class="outside"><span
+								class="inside"></span></span>Rating reminders</label>
+					<p class="pl-3 user-caption">Send an email reminding me to rate an item a week after
+						purchase
+					</p>
+					<label><input type="radio" class="radio-inline" name="radios" value=""><span class="outside"><span
+								class="inside"></span></span>Item update notifications</label>
+					<p class="pl-3 user-caption">Send an email when an item I've purchased is updated
+					</p>
+					<label><input type="radio" class="radio-inline" name="radios" value=""><span class="outside"><span
+								class="inside"></span></span>Team comment notifications</label>
+					<p class="pl-3 user-caption">Send me an email when someone comments on one of my team items
+					</p>
+					<label><input type="radio" class="radio-inline" name="radios" value=""><span class="outside"><span
+								class="inside"></span></span>Daily summary emails</label>
+					<p class="pl-3 user-caption">Send me a daily summary of all items approved or rejected
+					</p>
 				</div>
 			</div>
 		</div>
