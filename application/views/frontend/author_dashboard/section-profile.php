@@ -106,8 +106,8 @@
 							class="inside"></span></span>Template maker</label>
 			</div>
 		</div>
-		<div class="w-100 bg-light p-3 mt-3 rounded-xs">
-			<p class="user-caption m-0">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+		<div class="w-100 bg-gray p-3 mt-3 rounded-xs">
+			<p class="user-caption m-0 text-white">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
 				euismod tincidunt ut
 				laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation</p>
 		</div>

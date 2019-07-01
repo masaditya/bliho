@@ -16,5 +16,5 @@
 			<p class="user-caption">Country, Member since February 2019 </p>
 		</div>
 	</div>
-	<button class="btn pl-4 pr-5 py-2 button-float-right">Sales 0</button>
+	<button class="btn shadow-sm pl-4 pr-5 py-2 button-float-right">Sales 0</button>
 </div>

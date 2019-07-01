@@ -6,13 +6,13 @@
           <h4>Invoice Details</h4>
           <!-- <form action=""></form> -->
           <div class="flex-input">
-            <div class="col-lg-6">
+            <div class="col-lg-6 pl-0">
               <div>
                 <label for="name">First Name</label>
                 <input id="name" type="text" value="" name="name" />
               </div>
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-6 pr-0">
               <div>
                 <label for="email">Last Name</label>
                 <input id="email" type="text" value="" name="email" />
@@ -32,13 +32,13 @@
             <input id="email" type="text" value="" name="email" />
           </div>
           <div class="flex-input">
-            <div class="col-lg-6">
+            <div class="col-lg-6 pl-0">
               <div>
                 <label for="name">City</label>
                 <input id="name" type="text" value="" name="name" />
               </div>
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-6 pr-0">
               <div>
                 <label for="email">State / Province / Region</label>
                 <input id="email" type="text" value="" name="email" />
@@ -46,7 +46,7 @@
             </div>
           </div>
           <div class="flex-input">
-            <div class="col-lg-6">
+            <div class="col-lg-6 pl-0">
               <div>
                 <label for="name">Post Code</label>
                 <input id="name" type="text" value="" name="name" />

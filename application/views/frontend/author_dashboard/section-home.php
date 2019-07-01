@@ -6,8 +6,8 @@
 			<div class="container-fluid">
 				<div class="row mt-5">
 					<div class="col-sm-6 ">
-						<div class="container border rounded-xs py-4">
-							<h3>Upload</h3>
+						<div class="container border rounded-sm p-4">
+							<h3> <b> Upload </b></h3>
 							<p class="user-caption">
 								Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
 								tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
@@ -19,8 +19,8 @@
 						<button class="btn-cyan btn-rounded w-100 my-3">Upload File</button>
 					</div>
 					<div class="col-sm-6">
-						<div class="container border rounded-xs py-4">
-							<h3>Guidlines</h3>
+						<div class="container border rounded-sm p-4">
+							<h3> <b> Guidlines </b></h3>
 							<p class="user-caption">
 								Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
 								tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
