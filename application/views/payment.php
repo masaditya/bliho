@@ -1,3 +1,4 @@
+
 <body>
 <div class="video">
     <div class="row payment-container">
@@ -59,16 +60,19 @@
           <label for="payment-method">Confirm Your Plan</label>
           <div class="flex-input">
             <div class="col-lg-6">
-              <div class="confirm-card">
-                <input type="radio" name="confirm-card" id="radio-monthly" />
+              <div class="confirm-card radio-fancy">
+                  <label> <input type="radio"  name="confirm-card" id="radio-monthly" class="position-relative" value=""><span class="outside"><span
+                    class="inside"></span></span></label>
                 <h5>Monthly</h5>
                 <h3>$33/M</h3>
                 <p>+ local tax</p>
               </div>
             </div>
             <div class="col-lg-6">
-              <div class="confirm-card">
-                <input type="radio" name="confirm-card" id="radio-anually" />
+              <div class="confirm-card radio-fancy">
+                  <label> <input type="radio" name="confirm-card" id="radio-anually" class="position-relative" value=""><span class="outside"><span
+                    class="inside"></span></span></label>
+                <!-- <input type="radio" name="confirm-card" id="radio-anually" /> -->
                 <h5>Annualy</h5>
                 <h3>$16.50/M</h3>
                 <p>billed yearly at $198 + local tax</p>
@@ -78,10 +82,9 @@
         </div>
         <hr />
         <div class="option-payment-radio row">
-          <div class="col-md-8 radio-btn">
-            <label></label>
-            <input type="radio" class="form-check-input" id="radio-cc" name="payment-method" />
-            <label class="radio-inline control-label">Credit Card</label>
+          <div class="col-md-8 radio-btn radio-fancy">
+            <label class="pl-5 ml-3 font-weight-normal"><input type="radio" id="radio-cc" class="radio-inline" name="payment-method" value=""><span class="outside"><span
+							class="inside"></span></span>Credit Card</label>
           </div>
           <div class="flex-logo">
             <img style="height:30px;" src="<?=base_url()?>/assets/images/mastercard.png" alt="" />
@@ -93,7 +96,7 @@
           <div class="payment-stage">
             <input id="email" placeholder="City" type="text" />
             <div class="flex-input">
-              <div class="col-lg-4">
+              <div class="col-lg-4 pl-0">
                 <div>
                   <input placeholder="Country" list="country" name="email" />
                   <datalist id="country">
@@ -102,14 +105,14 @@
                   </datalist>
                 </div>
               </div>
-              <div class="col-lg-4">
+              <div class="col-lg-4 px-0">
                 <input placeholder="Province" list="province" name="email" />
                 <datalist id="province">
                   <option> East Java </option>
                   <option> West Java </option>
                 </datalist>
               </div>
-              <div class="col-lg-4">
+              <div class="col-lg-4 pr-0">
                 <input placeholder="postal code" name="postal code" />
               </div>
             </div>
@@ -117,10 +120,11 @@
           <hr />
         </div>
         <div class="option-payment-radio row ">
-          <div class="col-md-9 radio-btn">
-            <label></label>
-            <input type="radio" class="form-check-input" id="radio-paypal" name="payment-method" />
-            <label class="radio-inline control-label">Paypal</label>
+          <div class="col-md-9 radio-btn radio-fancy">
+            <label class="pl-5 ml-3 font-weight-normal"><input type="radio" id="radio-paypal" class="radio-inline" name="payment-method" value=""><span class="outside"><span
+							class="inside"></span></span>Paypal</label>
+            <!-- <input type="radio" class="form-check-input" id="radio-paypal" name="payment-method" />
+            <label class="radio-inline control-label">Paypal</label> -->
           </div>
           <div class="flex-logo">
             <img style="height:40px;" src="<?=base_url()?>/assets/images/paypal.png" alt="" />
@@ -144,28 +148,30 @@
         </div>
         <hr />
         <div class="option-payment-radio row ">
-          <div class="col-md-9 radio-btn">
-            <label></label>
-            <input type="radio" id="radio-same-address" class="form-check-input" name="radio-billing" />
-            <label class="radio-inline control-label">Same as shipping address</label>
+          <div class="col-md-9 radio-btn radio-fancy">
+            <label class="pl-5 ml-3 font-weight-normal"><input type="radio" id="radio-same-address" class="radio-inline" name="radio-billing" value=""><span class="outside"><span
+							class="inside"></span></span>Same as shipping address</label>
+            <!-- <input type="radio" id="radio-same-address" class="form-check-input" name="radio-billing" />
+            <label class="radio-inline control-label">Same as shipping address</label> -->
           </div>
         </div>
         <hr />
         <div class="option-payment-radio row ">
-          <div class="col-md-9 radio-btn">
-            <label></label>
-            <input type="radio" id="radio-billing-address" class="form-check-input" name="radio-billing" />
-            <label class="radio-inline control-label">Use a different billing address</label>
+          <div class="col-md-9 radio-btn radio-fancy">
+            <label class="pl-5 ml-3 font-weight-normal"><input type="radio" id="radio-billing-address" class="radio-inline" name="radio-billing" value=""><span class="outside"><span
+							class="inside"></span></span>Use a different billing address</label>
+            <!-- <input type="radio"  class="form-check-input" name="radio-billing" />
+            <label class="radio-inline control-label">Use a different billing address</label> -->
           </div>
         </div>
         <div class="option-address">
           <hr />
           <div class="payment-stage">
             <div class="flex-input">
-              <div class="col-lg-6">
+              <div class="col-lg-6 pl-0">
                 <input placeholder="First name" id="name" type="text" value="" name="name" />
               </div>
-              <div class="col-lg-6">
+              <div class="col-lg-6 pr-0">
                 <input placeholder="Last name" id="email" type="text" value="" name="email" />
               </div>
             </div>
@@ -173,7 +179,7 @@
             <input id="email" placeholder="Apartement, suite, etc. (optional)" type="text" />
             <input id="email" placeholder="City" type="text" />
             <div class="flex-input">
-              <div class="col-lg-4">
+              <div class="col-lg-4 pl-0">
                 <div>
                   <input placeholder="Country" list="country" name="email" />
                   <datalist id="country">
@@ -182,14 +188,14 @@
                   </datalist>
                 </div>
               </div>
-              <div class="col-lg-4">
+              <div class="col-lg-4 px-0">
                 <input placeholder="Province" list="province" name="email" />
                 <datalist id="province">
                   <option> East Java </option>
                   <option> West Java </option>
                 </datalist>
               </div>
-              <div class="col-lg-4">
+              <div class="col-lg-4 pr-0">
                 <input placeholder="postal code" name="postal code" />
               </div>
             </div>
@@ -299,18 +305,26 @@
       $(billingAddress).hide();
     })
     $('#radio-cc').click(function () {
-      $(creditCardOps).show();
+      $(creditCardOps).slideDown("slow", function () {
+                        $(this).show()
+                    })
     })
     $('#radio-paypal').click(function () {
-      $(creditCardOps).hide();
+      $(creditCardOps).slideUp("slow", function () {
+                        $(this).hide()
+                    })
     })
 
     $('#radio-billing-address').click(function () {
-      $(billingAddress).show()
+      $(billingAddress).slideDown("slow", function () {
+                        $(this).show()
+                    })
     })
 
     $('#radio-same-address').click(function () {
-      $(billingAddress).hide()
+      $(billingAddress).slideUp("slow", function () {
+                        $(this).hide()
+                    })
     })
   </script>
   </body>
