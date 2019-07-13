@@ -39,6 +39,11 @@
 			<p class="bg-dark font-weight-bold text-center text-white mx-auto py-2 w-75">
 				Recomended Category
 			</p>
+			<div class="speech-bubble w-65 mx-auto p-5 border my-3">
+				<b class="text-center my-4">Eid mubarak</b>
+			</div>
+
+
 			<p class="bg-dark font-weight-bold text-center text-white mx-auto py-2 w-75">
 				Author Resources
 			</p>

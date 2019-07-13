@@ -13,8 +13,8 @@
 	<div class="container">
 		<div class="d-flex w-auto justify-content-center ">
 			<ul class="nav shadow bg-white rounded" role="tablist">
-				<li class="nav-item tab ">
-					<a href="#step-1" id="step1-tab" class="nav-link " aria-selected="false" data-toggle="tab"
+				<li class="nav-item tab active-tab">
+					<a href="#step-1" id="step1-tab" class="nav-link active" aria-selected="true" data-toggle="tab"
 						role="tab">Home</a>
 				</li>
 				<li class="nav-item tab ">
@@ -25,8 +25,8 @@
 					<a href="#step-3" id="step3-tab" class="nav-link " aria-selected="false" data-toggle="tab"
 						role="tab">Settings</a>
 				</li>
-				<li class="nav-item tab active-tab ">
-					<a href="#step-4" id="step4-tab" class="nav-link active" aria-selected="true" data-toggle="tab"
+				<li class="nav-item tab  ">
+					<a href="#step-4" id="step4-tab" class="nav-link " aria-selected="false" data-toggle="tab"
 						role="tab">Payouts</a>
 				</li>
 				<li class="nav-item tab ">
@@ -38,7 +38,7 @@
 	</div>
 
 	<div class="container mt-5 tab-content">
-		<div class="tab-pane fade " id="step-1" aria-labelledby="step1-tab" role="tabpanel">
+		<div class="tab-pane fade show active" id="step-1" aria-labelledby="step1-tab" role="tabpanel">
 			<?php include 'section-home.php' ?>
 		</div>
 
@@ -55,13 +55,13 @@
 		</div>
 
 		<!-- section download -->
-		<div class="tab-pane fade show active" id="step-4" aria-labelledby="step4-tab" role="tabpanel">
+		<div class="tab-pane fade" id="step-4" aria-labelledby="step4-tab" role="tabpanel">
 			<?php include 'section-payout.php' ?>
 		</div>
 
 		<!-- section favorite -->
 		<div class="tab-pane fade " id="step-5" aria-labelledby="step5-tab" role="tabpanel">
-			<?php include 'section-favorite.php' ?>
+			<?php include 'section-earning.php' ?>
 		</div>
 		
 	</div>
